@@ -59,8 +59,11 @@ function main() {
 
   // 평면
   {
+    const loader = new THREE.TextureLoader();
     const planeGeometry = new THREE.PlaneGeometry(100, 100, 1, 1);
-    const planeMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff });
+    const planeMaterial = new THREE.MeshBasicMaterial({
+      map: loader.load('grass.jpg')
+    });
     const plane = new THREE.Mesh(planeGeometry, planeMaterial);
     plane.receiveShadow = true;
 
