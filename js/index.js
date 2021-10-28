@@ -1,10 +1,13 @@
-import * as THREE from "https://threejsfundamentals.org/threejs/resources/threejs/r132/build/three.module.js";
+import * as THREE from 'https://cdn.skypack.dev/pin/three@v0.133.1-a8rkd0QTHl2tMZXZJAEw/mode=imports,min/optimized/three.js';
+import { FirstPersonControls } from "https://cdn.skypack.dev/pin/three@v0.133.1-a8rkd0QTHl2tMZXZJAEw/mode=imports,min/unoptimized/examples/jsm/controls/FirstPersonControls.js";
 
 function main() {
   const canvas = document.querySelector("#c");
   const renderer = new THREE.WebGLRenderer({ canvas });
 
-  var camera = new THREE.PerspectiveCamera(
+  const clock = new THREE.Clock();
+
+  const camera = new THREE.PerspectiveCamera(
     50,
     window.innerWidth / window.innerHeight,
     0.1,
@@ -20,30 +23,43 @@ function main() {
   const scene = new THREE.Scene();
   scene.background = new THREE.Color("white");
 
-  // create the ground plane
-  var planeGeometry = new THREE.PlaneGeometry(100, 100, 1, 1);
-  var planeMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff });
-  var plane = new THREE.Mesh(planeGeometry, planeMaterial);
-  plane.receiveShadow = true;
+  const camControls = new FirstPersonControls(camera);
+  camControls.lookSpeed = 0.2;
+  camControls.movementSpeed = 20;
+  camControls.autoForward = false;
+  camControls.noFly = true;
+  camControls.lookVertical = true;
+  camControls.constrainVertical = true;
+  camControls.verticalMin = 0.0;
+  camControls.verticalMax = 2.0;
+  // camControls.lon = -150;
+  // camControls.lat = 120;
 
-  // rotate and position the plane
-  plane.rotation.x = -0.5 * Math.PI;
-  plane.position.x = 0;
-  plane.position.y = 0;
-  plane.position.z = 0;
+  // 평면
+  {
+    const planeGeometry = new THREE.PlaneGeometry(100, 100, 1, 1);
+    const planeMaterial = new THREE.MeshLambertMaterial({ color: 0xffffff });
+    const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+    plane.receiveShadow = true;
+  
+    plane.rotation.x = -0.5 * Math.PI;
+    plane.position.x = 0;
+    plane.position.y = 0;
+    plane.position.z = 0;
+  
+    scene.add(plane);
+  }
 
-  // add the plane to the scene
-  scene.add(plane);
-
-  // add subtle ambient lighting
-  var ambientLight = new THREE.AmbientLight(0x0c0c0c);
-  scene.add(ambientLight);
-
-  // add spotlight for the shadows
-  var spotLight = new THREE.SpotLight(0xffffff);
-  spotLight.position.set(-40, 60, -10);
-  spotLight.castShadow = true;
-  scene.add(spotLight);
+  // 조명
+  {
+    const ambientLight = new THREE.AmbientLight(0x0c0c0c);
+    scene.add(ambientLight);
+  
+    const spotLight = new THREE.SpotLight(0xffffff);
+    spotLight.position.set(-40, 60, -10);
+    spotLight.castShadow = true;
+    scene.add(spotLight);
+  }
 
   function resizeRendererToDisplaySize(renderer) {
     const canvas = renderer.domElement;
@@ -57,12 +73,16 @@ function main() {
   }
 
   function render() {
+    var delta = clock.getDelta();
+
     if (resizeRendererToDisplaySize(renderer)) {
       const canvas = renderer.domElement;
       camera.aspect = canvas.clientWidth / canvas.clientHeight;
       camera.updateProjectionMatrix();
     }
 
+    camControls.update(delta);
+    renderer.clear();
     renderer.render(scene, camera);
 
     requestAnimationFrame(render);
