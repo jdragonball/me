@@ -3,98 +3,28 @@
 <html>
 
 <head>
-  <title>???</title>
-  <script src="js/init.js"></script>
-  <script src="./libs/three.js"></script>
-  <script src="./libs/dat.gui.js"></script>
+  <title>申宰容</title>
+  <script src="./js/init.js"></script>
+  <script type="text/javascript" src="./libs/three.js"></script>
+  <script type="text/javascript" src="./libs/FirstPersonControls.js"></script>
   <style>
+    html,
     body {
       margin: 0;
-      overflow: hidden;
-      background-color: #000000;
+      height: 100%;
+    }
+
+    #c {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
   </style>
 </head>
 
 <body>
-
-  <div id="WebGL-output">
-  </div>
-  
-  <script type="text/javascript">
-
-    function init() {
-
-      var scene = new THREE.Scene();
-
-      var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-      var webGLRenderer = new THREE.WebGLRenderer();
-      webGLRenderer.setClearColor(new THREE.Color(0x000000, 1.0));
-      webGLRenderer.setSize(window.innerWidth, window.innerHeight);
-
-      camera.position.x = 20;
-      camera.position.y = 0;
-      camera.position.z = 150;
-
-      document.getElementById("WebGL-output").appendChild(webGLRenderer.domElement);
-
-      createSprites();
-      render();
-
-      var group;
-
-      function createSprites() {
-        group = new THREE.Object3D();
-        var range = 200;
-        for (var i = 0; i < 400; i++) {
-          group.add(createSprite(10, false, 0.6, 0xffffff, i % 5, range));
-        }
-        scene.add(group);
-      }
-
-      function getTexture() {
-        var texture = new THREE.ImageUtils.loadTexture("./sheet.png");
-        return texture;
-      }
-
-      function createSprite(size, transparent, opacity, color, spriteNumber, range) {
-        var spriteMaterial = new THREE.SpriteMaterial({
-          opacity: opacity,
-          color: color,
-          transparent: transparent,
-          map: getTexture()
-        }
-        );
-
-        spriteMaterial.map.offset = new THREE.Vector2(0.2 * spriteNumber, 0);
-        spriteMaterial.map.repeat = new THREE.Vector2(1 / 5, 1);
-        spriteMaterial.depthTest = false;
-
-        spriteMaterial.blending = THREE.AdditiveBlending;
-
-        var sprite = new THREE.Sprite(spriteMaterial);
-        sprite.scale.set(size, size, size);
-        sprite.position.set(Math.random() * range - range / 2, Math.random() * range - range / 2, Math.random() * range - range / 2);
-        sprite.velocityX = 5;
-
-
-        return sprite;
-      }
-
-      var step = 0;
-
-      function render() {
-
-        step += 0.01;
-        group.rotation.x = step;
-
-        requestAnimationFrame(render);
-        webGLRenderer.render(scene, camera);
-      }
-    }
-    window.onload = init;
-  </script>
+  <canvas id="c"></canvas>
+  <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>
