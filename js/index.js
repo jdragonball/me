@@ -13,28 +13,28 @@ function main() {
     0.1,
     1000
   );
-  camera.position.x = 0;
-  // 키?
-  camera.position.y = 30;
-  // 앞으로 시야
-  camera.position.z = 100;
-  camera.lookAt(new THREE.Vector3(0, 0, 0));
+  camera.position.set(0, 30, 100);
+  camera.lookAt(0, 0, 0);
+  camera.rotation.order = 'YXZ';
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color("white");
 
-  // scene.add(camera);
+  scene.add(camera);
 
-  const camControls = new FirstPersonControls(camera);
-  camControls.lookSpeed = 0.2;
-  camControls.movementSpeed = 20;
-  camControls.autoForward = false;
-  camControls.noFly = true;
-  camControls.lookVertical = true;
-  camControls.constrainVertical = true;
-  camControls.verticalMin = 0.0;
-  camControls.verticalMax = 2.0;
-  camControls.lookAt(new THREE.Vector3(0, -100, 0));
+  var axes = new THREE.AxisHelper(100);
+  scene.add(axes);
+
+  // const camControls = new FirstPersonControls(camera);
+  // camControls.lookSpeed = 0.2;
+  // camControls.movementSpeed = 20;
+  // camControls.autoForward = false;
+  // camControls.noFly = true;
+  // camControls.lookVertical = true;
+  // camControls.constrainVertical = true;
+  // camControls.verticalMin = 0.0;
+  // camControls.verticalMax = 2.0;
+  // camControls.lookAt(new THREE.Vector3(0, -100, 0));
   // camControls.heightMax = 0.1;
   // camControls.heightMin = 0.1;
   // camControls.lon = -150;
@@ -86,8 +86,10 @@ function main() {
       camera.updateProjectionMatrix();
     }
 
-    camControls.update(delta);
-    renderer.clear();
+    // console.log(camera.getWorldDirection)
+    
+    // camControls.update(delta);
+    // renderer.clear();
     renderer.render(scene, camera);
 
     requestAnimationFrame(render);
