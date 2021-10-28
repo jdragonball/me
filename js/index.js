@@ -23,6 +23,8 @@ function main() {
   const scene = new THREE.Scene();
   scene.background = new THREE.Color("white");
 
+  // scene.add(camera);
+
   const camControls = new FirstPersonControls(camera);
   camControls.lookSpeed = 0.2;
   camControls.movementSpeed = 20;
@@ -32,8 +34,11 @@ function main() {
   camControls.constrainVertical = true;
   camControls.verticalMin = 0.0;
   camControls.verticalMax = 2.0;
+  camControls.lookAt(new THREE.Vector3(0, -100, 0));
+  // camControls.heightMax = 0.1;
+  // camControls.heightMin = 0.1;
   // camControls.lon = -150;
-  // camControls.lat = 120;
+  // camControls.lat = 10;
 
   // 평면
   {
