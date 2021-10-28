@@ -22,7 +22,7 @@ function main() {
 
   scene.add(camera);
 
-  var axes = new THREE.AxisHelper(100);
+  var axes = new THREE.AxesHelper(1000);
   scene.add(axes);
 
   // const camControls = new FirstPersonControls(camera);
