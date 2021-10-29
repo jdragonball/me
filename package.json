@@ -1,0 +1,28 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdragonball/me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdragonball/me/issues"
+  },
+  "homepage": "https://github.com/jdragonball/me#readme",
+  "devDependencies": {
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "three": "^0.134.0"
+  }
+}
