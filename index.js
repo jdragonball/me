@@ -108,9 +108,29 @@ function main() {
       gltf.scene.scale.set(30, 30, 30);
       gltf.scene.position.set(0, 30, 0);
 
-      gltf.scene.traverse( child => {
+      gltf.scene.traverse((child) => {
         clickableObjects.push(child);
-      } );
+      });
+
+      scene.add(gltf.scene);
+      clickableObjects.push(gltf.scene);
+    });
+  }
+
+  // 콩맨
+  {
+    const loader = new GLTFLoader().setPath("./assets/models/");
+    loader.load("beanman.glb", (gltf) => {
+      gltf.scene.name = "rock";
+      gltf.scene.scale.set(30, 30, 30);
+      gltf.scene.position.set(-70, 30, -100);
+
+      const newMaterial = new THREE.MeshPhongMaterial({ color: "green" });
+
+      gltf.scene.traverse((child) => {
+        clickableObjects.push(child);
+        if (child.isMesh) child.material = newMaterial;
+      });
 
       scene.add(gltf.scene);
       clickableObjects.push(gltf.scene);
@@ -130,8 +150,8 @@ function main() {
 
   function catchObjectClick(event) {
     let vector = new THREE.Vector3(
-      ((window.innerWidth / 2) / window.innerWidth) * 2 - 1,
-      -((window.innerHeight / 2) / window.innerHeight) * 2 + 1,
+      (window.innerWidth / 2 / window.innerWidth) * 2 - 1,
+      -(window.innerHeight / 2 / window.innerHeight) * 2 + 1,
       0.5
     );
     vector = vector.unproject(camera);
@@ -143,7 +163,6 @@ function main() {
 
     const intersects = raycaster.intersectObjects(clickableObjects);
 
-    console.log(scene)
     if (intersects.length > 0) {
       console.log(`${intersects[0].object.name} clicked`);
 
