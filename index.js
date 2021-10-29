@@ -1,5 +1,8 @@
-import * as THREE from "./three/build/three.min.js";
-import { GLTFLoader } from './three/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from "https://threejsfundamentals.org/threejs/resources/threejs/r132/build/three.module.js";
+import { GLTFLoader } from "https://threejsfundamentals.org/threejs/resources/threejs/r132/examples/jsm/loaders/GLTFLoader.js";
+
+// import * as THREE from "./three/build/three.module.js";
+// import { GLTFLoader } from "./three/examples/jsm/loaders/GLTFLoader.js";
 
 const keyStates = {};
 
@@ -76,20 +79,31 @@ function main() {
   }
 
   // 바위
-  // {
-  //   const loader = new GLTFLoader();
+  {
+    const loader = new GLTFLoader().setPath("./assets/models/rock/");
+    loader.load("scene.gltf", (gltf) => {
+      gltf.scene.scale.set(30, 30, 30);
+      gltf.scene.position.set(0, 30, 0);
 
-  //   loader.load(
-  //     "../models/rock/scene.gltf",
-  //     function (gltf) {
-  //       scene.add(gltf.scene);
-  //     },
-  //     undefined,
-  //     function (error) {
-  //       console.error(error);
-  //     }
-  //   );
-  // }
+      scene.add(gltf.scene);
+      // gltf.scene.traverse( child => {
+
+      //   if ( child.isMesh ) {
+
+      //     child.castShadow = true;
+      //     child.receiveShadow = true;
+
+      //     if ( child.material.map ) {
+
+      //       child.material.map.anisotropy = 8;
+
+      //     }
+
+      //   }
+
+      // } );
+    });
+  }
 
   // 조명
   {
