@@ -1,8 +1,5 @@
-import * as THREE from "https://threejsfundamentals.org/threejs/resources/threejs/r132/build/three.module.js";
-import { GLTFLoader } from "https://threejsfundamentals.org/threejs/resources/threejs/r132/examples/jsm/loaders/GLTFLoader.js";
-
-// import * as THREE from "./three/build/three.module.js";
-// import { GLTFLoader } from "./three/examples/jsm/loaders/GLTFLoader.js";
+import * as THREE from "./three/build/three.module.js";
+import { GLTFLoader } from "./three/examples/jsm/loaders/GLTFLoader.js";
 
 const keyStates = {};
 
