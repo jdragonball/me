@@ -11,8 +11,10 @@ const STEPS_PER_FRAME = 5;
 let mouseTime = 0;
 
 function main() {
-  const canvas = document.querySelector("#c");
+  const canvas = document.querySelector('#c');
   const renderer = new THREE.WebGLRenderer({ canvas });
+
+  const targetIcon = document.querySelector('.target-icon');
 
   const clock = new THREE.Clock();
 
@@ -36,6 +38,14 @@ function main() {
 
   const playerVelocity = new THREE.Vector3();
   const playerDirection = new THREE.Vector3();
+
+  document.addEventListener('pointerlockchange', (event) => {
+    if (!document.pointerLockElement) {
+      targetIcon.style.visibility = 'hidden';
+    } else {
+      targetIcon.style.visibility = 'visible';
+    }
+  }, false);
 
   document.addEventListener("keydown", (event) => {
     keyStates[event.code] = true;
@@ -179,7 +189,7 @@ function main() {
     requestAnimationFrame(render);
   }
 
-  requestAnimationFrame(render);
+  render();
 }
 
 main();
