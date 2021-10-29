@@ -125,7 +125,8 @@ function main() {
       gltf.scene.scale.set(30, 30, 30);
       gltf.scene.position.set(-70, 30, -100);
 
-      const newMaterial = new THREE.MeshPhongMaterial({ color: "green" });
+      const newMaterial = new THREE.MeshToonMaterial();
+      newMaterial.color.setHex("0xff0077");
 
       gltf.scene.traverse((child) => {
         clickableObjects.push(child);
