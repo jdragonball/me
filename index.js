@@ -8,13 +8,15 @@ const keyStates = {};
 
 const STEPS_PER_FRAME = 5;
 
+const clickableObjects = [];
+
 let mouseTime = 0;
 
 function main() {
-  const canvas = document.querySelector('#c');
+  const canvas = document.querySelector("#c");
   const renderer = new THREE.WebGLRenderer({ canvas });
 
-  const targetIcon = document.querySelector('.target-icon');
+  const targetIcon = document.querySelector(".target-icon");
 
   const clock = new THREE.Clock();
 
@@ -39,13 +41,17 @@ function main() {
   const playerVelocity = new THREE.Vector3();
   const playerDirection = new THREE.Vector3();
 
-  document.addEventListener('pointerlockchange', (event) => {
-    if (!document.pointerLockElement) {
-      targetIcon.style.visibility = 'hidden';
-    } else {
-      targetIcon.style.visibility = 'visible';
-    }
-  }, false);
+  document.addEventListener(
+    "pointerlockchange",
+    (event) => {
+      if (!document.pointerLockElement) {
+        targetIcon.style.visibility = "hidden";
+      } else {
+        targetIcon.style.visibility = "visible";
+      }
+    },
+    false
+  );
 
   document.addEventListener("keydown", (event) => {
     keyStates[event.code] = true;
@@ -55,7 +61,11 @@ function main() {
     keyStates[event.code] = false;
   });
 
-  document.addEventListener("mousedown", () => {
+  document.addEventListener("mousedown", (event) => {
+    if (document.pointerLockElement) {
+      catchObjectClick(event);
+    }
+
     document.body.requestPointerLock();
 
     mouseTime = performance.now();
@@ -78,6 +88,7 @@ function main() {
       map: loader.load("../assets/textures/grass.jpg"),
     });
     const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+    plane.name = "grass";
     plane.receiveShadow = true;
 
     plane.rotation.x = -0.5 * Math.PI;
@@ -86,16 +97,23 @@ function main() {
     plane.position.z = -100;
 
     scene.add(plane);
+    clickableObjects.push(plane);
   }
 
   // 바위
   {
     const loader = new GLTFLoader().setPath("./assets/models/rock/");
     loader.load("scene.gltf", (gltf) => {
+      gltf.scene.name = "rock";
       gltf.scene.scale.set(30, 30, 30);
       gltf.scene.position.set(0, 30, 0);
 
+      gltf.scene.traverse( child => {
+        clickableObjects.push(child);
+      } );
+
       scene.add(gltf.scene);
+      clickableObjects.push(gltf.scene);
     });
   }
 
@@ -108,6 +126,31 @@ function main() {
     spotLight.position.set(-40, 60, -10);
     spotLight.castShadow = true;
     scene.add(spotLight);
+  }
+
+  function catchObjectClick(event) {
+    let vector = new THREE.Vector3(
+      ((window.innerWidth / 2) / window.innerWidth) * 2 - 1,
+      -((window.innerHeight / 2) / window.innerHeight) * 2 + 1,
+      0.5
+    );
+    vector = vector.unproject(camera);
+
+    const raycaster = new THREE.Raycaster(
+      camera.position,
+      vector.sub(camera.position).normalize()
+    );
+
+    const intersects = raycaster.intersectObjects(clickableObjects);
+
+    console.log(scene)
+    if (intersects.length > 0) {
+      console.log(`${intersects[0].object.name} clicked`);
+
+      intersects[0].object.material.transparent = true;
+      intersects[0].object.material.opacity =
+        intersects[0].object.material.opacity !== 0.1 ? 0.1 : 1;
+    }
   }
 
   function getForwardVector() {
