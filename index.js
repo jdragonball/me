@@ -1,5 +1,5 @@
-import * as THREE from "three";
-// import { GLTFLoader } from "../jsm/loaders/GLTFLoader.js";
+import * as THREE from "./three/build/three.min.js";
+import { GLTFLoader } from './three/examples/jsm/loaders/GLTFLoader.js';
 
 const keyStates = {};
 
