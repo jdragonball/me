@@ -86,22 +86,6 @@ function main() {
       gltf.scene.position.set(0, 30, 0);
 
       scene.add(gltf.scene);
-      // gltf.scene.traverse( child => {
-
-      //   if ( child.isMesh ) {
-
-      //     child.castShadow = true;
-      //     child.receiveShadow = true;
-
-      //     if ( child.material.map ) {
-
-      //       child.material.map.anisotropy = 8;
-
-      //     }
-
-      //   }
-
-      // } );
     });
   }
 
