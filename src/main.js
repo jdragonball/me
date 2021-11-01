@@ -1,6 +1,15 @@
+import { init } from "./init.js"; init();
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-// import * as Physijs from "./three/libs/physi.js";
+import Physijs from "physijs-webpack";
+// const Physijs = require("physijs-webpack");
+// 
+console.log(Physijs)
+// import PhysijsWorker from 'physijs-webpack/physijs_worker';
+// import * as PhysijsWorker from 'physijs-webpack/physijs_worker';
+
+// Physijs.scripts.worker = '../libs/physijs_worker.js';
+// Physijs.scripts.ammo = '../libs/ammo.js';
 
 const keyStates = {};
 
@@ -28,8 +37,11 @@ function main() {
   camera.lookAt(0, 0, 0);
   camera.rotation.order = "YXZ";
 
-  const scene = new THREE.Scene();
+  // const scene = new THREE.Scene();
+  const scene = new Physijs.Scene;
+  // console.log(scene);
   scene.background = new THREE.Color("white");
+  scene.setGravity(new THREE.Vector3(0, -50, 0));
 
   scene.add(camera);
 
@@ -264,6 +276,8 @@ function main() {
     renderer.render(scene, camera);
 
     requestAnimationFrame(render);
+
+    scene.simulate(undefined, 1);
   }
 
   render();

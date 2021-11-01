@@ -32,9 +32,11 @@
     "terser-webpack-plugin": "^5.2.4",
     "webpack": "^5.61.0",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.4.0"
+    "webpack-dev-server": "^4.4.0",
+    "worker-loader": "^2.0.0"
   },
   "dependencies": {
+    "physijs-webpack": "^0.1.4",
     "three": "^0.132.0"
   }
 }
