@@ -1,10 +1,11 @@
 import { init } from "./init.js"; init();
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import Physijs from "physijs-webpack";
+var Physijs = require('physijs-webpack');
+
+console.log(Physijs.Scene);
 // const Physijs = require("physijs-webpack");
 // 
-console.log(Physijs)
 // import PhysijsWorker from 'physijs-webpack/physijs_worker';
 // import * as PhysijsWorker from 'physijs-webpack/physijs_worker';
 
@@ -41,7 +42,7 @@ function main() {
   const scene = new Physijs.Scene;
   // console.log(scene);
   scene.background = new THREE.Color("white");
-  scene.setGravity(new THREE.Vector3(0, -50, 0));
+  // scene.setGravity(new THREE.Vector3(0, -50, 0));
 
   scene.add(camera);
 
@@ -277,7 +278,7 @@ function main() {
 
     requestAnimationFrame(render);
 
-    scene.simulate(undefined, 1);
+    // scene.simulate(undefined, 1);
   }
 
   render();

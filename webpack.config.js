@@ -49,11 +49,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: "babel-loader",
-        exclude: /node_modules/,
-      },
-      {
-        test: /\.worker\.js$/,
-        use: { loader: "worker-loader" },
+        // exclude: /node_modules/,
       },
       {
         test: /\.js$/,
