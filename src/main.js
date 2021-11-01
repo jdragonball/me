@@ -1,9 +1,6 @@
-import { init } from "./init.js";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 // import * as Physijs from "./three/libs/physi.js";
-
-init();
 
 const keyStates = {};
 
@@ -99,6 +96,22 @@ function main() {
 
     scene.add(plane);
     clickableObjects.push(plane);
+  }
+
+  // 박스
+  {
+    const boxWidth = 1;
+    const boxHeight = 1;
+    const boxDepth = 1;
+    const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
+
+    const material = new THREE.MeshPhongMaterial({ color: 0x44aa88 }); // greenish blue
+
+    const cube = new THREE.Mesh(geometry, material);
+    cube.scale.set(30, 30, 30);
+    cube.position.set(0, 40, -50);
+    scene.add(cube);
+    clickableObjects.push(cube);
   }
 
   // 바위
