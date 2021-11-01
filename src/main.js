@@ -1,6 +1,6 @@
 import { init } from "./init.js";
-import * as THREE from "./three/build/three.module.js";
-import { GLTFLoader } from "./three/examples/jsm/loaders/GLTFLoader.js";
+import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 // import * as Physijs from "./three/libs/physi.js";
 
 init();
