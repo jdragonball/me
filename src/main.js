@@ -119,25 +119,25 @@ function main() {
   }
 
   // 콩맨 oversize
-  {
-    const loader = new GLTFLoader().setPath("./assets/models/");
-    loader.load("beanman.glb", (gltf) => {
-      gltf.scene.name = "rock";
-      gltf.scene.scale.set(30, 30, 30);
-      gltf.scene.position.set(-70, 30, -100);
+  // {
+  //   const loader = new GLTFLoader().setPath("./assets/models/");
+  //   loader.load("beanman.glb", (gltf) => {
+  //     gltf.scene.name = "rock";
+  //     gltf.scene.scale.set(30, 30, 30);
+  //     gltf.scene.position.set(-70, 30, -100);
 
-      const newMaterial = new THREE.MeshToonMaterial();
-      newMaterial.color.setHex("0xff0077");
+  //     const newMaterial = new THREE.MeshToonMaterial();
+  //     newMaterial.color.setHex("0xff0077");
 
-      gltf.scene.traverse((child) => {
-        clickableObjects.push(child);
-        if (child.isMesh) child.material = newMaterial;
-      });
+  //     gltf.scene.traverse((child) => {
+  //       clickableObjects.push(child);
+  //       if (child.isMesh) child.material = newMaterial;
+  //     });
 
-      scene.add(gltf.scene);
-      clickableObjects.push(gltf.scene);
-    });
-  }
+  //     scene.add(gltf.scene);
+  //     clickableObjects.push(gltf.scene);
+  //   });
+  // }
 
   // 조명
   {
