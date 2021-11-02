@@ -6,11 +6,6 @@ import * as CANNON from "cannon-es";
 import { PointerLockControlsCannon } from "./PointerLockControlsCannon.js";
 
 function main() {
-
-  /**
-   * Example of a really barebones version of a fps game.
-   */
-
   // three.js variables
   let camera, scene, renderer;
   let material;
