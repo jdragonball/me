@@ -1,357 +1,301 @@
 import { init } from "./init.js";
 init();
 import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+// import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import * as CANNON from "cannon-es";
-
-const keyStates = {};
-
-const STEPS_PER_FRAME = 5;
-
-const clickableObjects = [];
-
-let mouseTime = 0;
+import { PointerLockControlsCannon } from "./PointerLockControlsCannon.js";
 
 function main() {
-  const canvas = document.querySelector("#c");
-  const renderer = new THREE.WebGLRenderer({ canvas });
 
-  const targetIcon = document.querySelector(".target-icon");
+  /**
+   * Example of a really barebones version of a fps game.
+   */
 
-  const clock = new THREE.Clock();
+  // three.js variables
+  let camera, scene, renderer;
+  let material;
 
-  const camera = new THREE.PerspectiveCamera(
-    50,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    1000
-  );
-  camera.position.set(0, 20, 100);
-  camera.lookAt(0, 0, 0);
-  camera.rotation.order = "YXZ";
+  // cannon.js variables
+  let world;
+  let controls;
+  const timeStep = 1 / 60;
+  let lastCallTime = performance.now();
+  let sphereShape;
+  let sphereBody;
+  let physicsMaterial;
+  const balls = [];
+  const ballMeshes = [];
+  const boxes = [];
+  const boxMeshes = [];
 
-  const scene = new THREE.Scene();
-  // const scene = new Physijs.Scene;
-  // console.log(scene);
-  scene.background = new THREE.Color("white");
-  // scene.setGravity(new THREE.Vector3(0, -50, 0));
+  const instructions = document.getElementById("instructions");
 
-  scene.add(camera);
+  initThree();
+  initCannon();
+  initPointerLock();
+  animate();
 
-  const axes = new THREE.AxesHelper(1000);
-  scene.add(axes);
+  function initThree() {
+    // Camera
+    camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
 
-  let world = new CANNON.World();
+    // Scene
+    scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0xffffff, 0, 500);
 
-  let material = new THREE.MeshLambertMaterial({ color: 0xdddddd })
+    // Renderer
+    renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor(scene.fog.color);
 
-  const boxes = []
-  const boxMeshes = []
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
-  // Tweak contact properties.
-  // Contact stiffness - use to make softer/harder contacts
-  world.defaultContactMaterial.contactEquationStiffness = 1e9;
+    document.body.appendChild(renderer.domElement);
 
-  // Stabilization time in number of timesteps
-  world.defaultContactMaterial.contactEquationRelaxation = 4;
-
-  const solver = new CANNON.GSSolver();
-  solver.iterations = 7;
-  solver.tolerance = 0.1;
-  world.solver = new CANNON.SplitSolver(solver);
-  // use this to test non-split solver
-  // world.solver = solver
-
-  world.gravity.set(0, -100, 0);
-
-  // Create a slippery material (friction coefficient = 0.0)
-  let physicsMaterial = new CANNON.Material("physics");
-  const physics_physics = new CANNON.ContactMaterial(
-    physicsMaterial,
-    physicsMaterial,
-    {
-      friction: 0.0,
-      restitution: 0.3,
-    }
-  );
-
-  // We must add the contact materials to the world
-  world.addContactMaterial(physics_physics);
-
-  // Add boxes both in cannon.js and three.js
-  const halfExtents = new CANNON.Vec3(1, 1, 1);
-  const boxShape = new CANNON.Box(halfExtents);
-  const boxGeometry = new THREE.BoxBufferGeometry(
-    halfExtents.x * 2,
-    halfExtents.y * 2,
-    halfExtents.z * 2
-  );
-
-  for (let i = 0; i < 7; i++) {
-    const boxBody = new CANNON.Body({ mass: 5 });
-    boxBody.addShape(boxShape);
-    const boxMesh = new THREE.Mesh(boxGeometry, material);
-
-    const x = (Math.random() - 0.5) * 20;
-    const y = (Math.random() - 0.5) * 1 + 100;
-    const z = (Math.random() - 0.5) * 20;
-
-    boxBody.position.set(x, y, z);
-    boxMesh.position.copy(boxBody.position);
-
-    boxMesh.castShadow = true;
-    boxMesh.receiveShadow = true;
-
-    world.addBody(boxBody);
-    scene.add(boxMesh);
-    boxes.push(boxBody);
-    boxMeshes.push(boxMesh);
-  }
-
-  const playerVelocity = new THREE.Vector3();
-  const playerDirection = new THREE.Vector3();
-
-  document.addEventListener(
-    "pointerlockchange",
-    (event) => {
-      if (!document.pointerLockElement) {
-        targetIcon.style.visibility = "hidden";
-      } else {
-        targetIcon.style.visibility = "visible";
-      }
-    },
-    false
-  );
-
-  document.addEventListener("keydown", (event) => {
-    keyStates[event.code] = true;
-  });
-
-  document.addEventListener("keyup", (event) => {
-    keyStates[event.code] = false;
-  });
-
-  document.addEventListener("mousedown", (event) => {
-    if (document.pointerLockElement) {
-      catchObjectClick(event);
-    }
-
-    document.body.requestPointerLock();
-
-    mouseTime = performance.now();
-  });
-
-  document.addEventListener("mouseup", () => {});
-
-  document.body.addEventListener("mousemove", (event) => {
-    if (document.pointerLockElement === document.body) {
-      camera.rotation.y -= event.movementX / 500;
-      camera.rotation.x -= event.movementY / 500;
-    }
-  });
-
-  // 평면
-  {
-    const loader = new THREE.TextureLoader();
-    const planeGeometry = new THREE.PlaneGeometry(100, 400, 1, 1);
-    const planeMaterial = new THREE.MeshBasicMaterial({
-      map: loader.load("./assets/textures/grass.jpg"),
-    });
-    const plane = new THREE.Mesh(planeGeometry, planeMaterial);
-    plane.name = "grass";
-    plane.receiveShadow = true;
-
-    plane.rotation.x = -0.5 * Math.PI;
-    plane.position.x = 0;
-    plane.position.y = 0;
-    plane.position.z = -100;
-
-    scene.add(plane);
-    clickableObjects.push(plane);
-  }
-
-  // 박스
-  {
-    const boxWidth = 1;
-    const boxHeight = 1;
-    const boxDepth = 1;
-    const geometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth);
-
-    const material = new THREE.MeshPhongMaterial({ color: 0x44aa88 }); // greenish blue
-
-    const cube = new THREE.Mesh(geometry, material);
-    cube.scale.set(30, 30, 30);
-    cube.position.set(0, 40, -50);
-    scene.add(cube);
-    clickableObjects.push(cube);
-  }
-
-  // 바위
-  {
-    const loader = new GLTFLoader().setPath("./assets/models/rock/");
-    loader.load("scene.gltf", (gltf) => {
-      gltf.scene.name = "rock";
-      gltf.scene.scale.set(30, 30, 30);
-      gltf.scene.position.set(0, 30, 0);
-
-      gltf.scene.traverse((child) => {
-        clickableObjects.push(child);
-      });
-
-      scene.add(gltf.scene);
-      clickableObjects.push(gltf.scene);
-    });
-  }
-
-  // 콩맨 oversize
-  // {
-  //   const loader = new GLTFLoader().setPath("./assets/models/");
-  //   loader.load("beanman.glb", (gltf) => {
-  //     gltf.scene.name = "rock";
-  //     gltf.scene.scale.set(30, 30, 30);
-  //     gltf.scene.position.set(-70, 30, -100);
-
-  //     const newMaterial = new THREE.MeshToonMaterial();
-  //     newMaterial.color.setHex("0xff0077");
-
-  //     gltf.scene.traverse((child) => {
-  //       clickableObjects.push(child);
-  //       if (child.isMesh) child.material = newMaterial;
-  //     });
-
-  //     scene.add(gltf.scene);
-  //     clickableObjects.push(gltf.scene);
-  //   });
-  // }
-
-  // 조명
-  {
-    const ambientLight = new THREE.AmbientLight(0x0c0c0c);
+    // Lights
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
     scene.add(ambientLight);
 
-    const spotLight = new THREE.SpotLight(0xffffff);
-    spotLight.position.set(-40, 60, -10);
-    spotLight.castShadow = true;
-    scene.add(spotLight);
+    const spotlight = new THREE.SpotLight(0xffffff, 0.9, 0, Math.PI / 4, 1);
+    spotlight.position.set(10, 30, 20);
+    spotlight.target.position.set(0, 0, 0);
+
+    spotlight.castShadow = true;
+
+    spotlight.shadow.camera.near = 10;
+    spotlight.shadow.camera.far = 100;
+    spotlight.shadow.camera.fov = 30;
+
+    // spotlight.shadow.bias = -0.0001
+    spotlight.shadow.mapSize.width = 2048;
+    spotlight.shadow.mapSize.height = 2048;
+
+    scene.add(spotlight);
+
+    // Generic material
+    material = new THREE.MeshLambertMaterial({ color: 0xdddddd });
+
+    // Floor
+    const floorGeometry = new THREE.PlaneBufferGeometry(300, 300, 100, 100);
+    floorGeometry.rotateX(-Math.PI / 2);
+    const floor = new THREE.Mesh(floorGeometry, material);
+    floor.receiveShadow = true;
+    scene.add(floor);
+
+    window.addEventListener("resize", onWindowResize);
   }
 
-  function catchObjectClick(event) {
-    let vector = new THREE.Vector3(
-      (window.innerWidth / 2 / window.innerWidth) * 2 - 1,
-      -(window.innerHeight / 2 / window.innerHeight) * 2 + 1,
-      0.5
-    );
-    vector = vector.unproject(camera);
-
-    const raycaster = new THREE.Raycaster(
-      camera.position,
-      vector.sub(camera.position).normalize()
-    );
-
-    const intersects = raycaster.intersectObjects(clickableObjects);
-
-    if (intersects.length > 0) {
-      console.log(`${intersects[0].object.name} clicked`);
-
-      intersects[0].object.material.transparent = true;
-      intersects[0].object.material.opacity =
-        intersects[0].object.material.opacity !== 0.1 ? 0.1 : 1;
-    }
-  }
-
-  function getForwardVector() {
-    camera.getWorldDirection(playerDirection);
-    playerDirection.y = 0;
-    playerDirection.normalize();
-
-    return playerDirection;
-  }
-
-  function getSideVector() {
-    camera.getWorldDirection(playerDirection);
-    playerDirection.y = 0;
-    playerDirection.normalize();
-    playerDirection.cross(camera.up);
-
-    return playerDirection;
-  }
-
-  function controls(deltaTime) {
-    // gives a bit of air control
-    const speedDelta = deltaTime * 8;
-
-    if (keyStates["KeyW"]) {
-      playerVelocity.add(getForwardVector().multiplyScalar(speedDelta));
-    }
-
-    if (keyStates["KeyS"]) {
-      playerVelocity.add(getForwardVector().multiplyScalar(-speedDelta));
-    }
-
-    if (keyStates["KeyA"]) {
-      playerVelocity.add(getSideVector().multiplyScalar(-speedDelta));
-    }
-
-    if (keyStates["KeyD"]) {
-      playerVelocity.add(getSideVector().multiplyScalar(speedDelta));
-    }
-  }
-
-  function updatePlayer(deltaTime) {
-    let damping = Math.exp(-4 * deltaTime) - 1;
-
-    playerVelocity.addScaledVector(playerVelocity, damping);
-
-    const deltaPosition = playerVelocity.clone().multiplyScalar(deltaTime);
-
-    camera.position.x += deltaPosition.x * 50;
-    camera.position.z += deltaPosition.z * 50;
+  function onWindowResize() {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
   }
 
   function initCannon() {
+    world = new CANNON.World();
+
+    // Tweak contact properties.
+    // Contact stiffness - use to make softer/harder contacts
+    world.defaultContactMaterial.contactEquationStiffness = 1e9;
+
+    // Stabilization time in number of timesteps
+    world.defaultContactMaterial.contactEquationRelaxation = 4;
+
+    const solver = new CANNON.GSSolver();
+    solver.iterations = 7;
+    solver.tolerance = 0.1;
+    world.solver = new CANNON.SplitSolver(solver);
+    // use this to test non-split solver
+    // world.solver = solver
+
+    world.gravity.set(0, -20, 0);
+
+    // Create a slippery material (friction coefficient = 0.0)
+    physicsMaterial = new CANNON.Material("physics");
+    const physics_physics = new CANNON.ContactMaterial(
+      physicsMaterial,
+      physicsMaterial,
+      {
+        friction: 0.0,
+        restitution: 0.3,
+      }
+    );
+
+    // We must add the contact materials to the world
+    world.addContactMaterial(physics_physics);
+
+    // Create the user collision sphere
+    const radius = 1.3;
+    sphereShape = new CANNON.Sphere(radius);
+    sphereBody = new CANNON.Body({ mass: 5, material: physicsMaterial });
+    sphereBody.addShape(sphereShape);
+    sphereBody.position.set(0, 5, 0);
+    sphereBody.linearDamping = 0.9;
+    world.addBody(sphereBody);
+
+    // Create the ground plane
+    const groundShape = new CANNON.Plane();
+    const groundBody = new CANNON.Body({ mass: 0, material: physicsMaterial });
+    groundBody.addShape(groundShape);
+    groundBody.quaternion.setFromEuler(-Math.PI / 2, 0, 0);
+    world.addBody(groundBody);
+
+    // Add boxes both in cannon.js and three.js
+    const halfExtents = new CANNON.Vec3(1, 1, 1);
+    const boxShape = new CANNON.Box(halfExtents);
+    const boxGeometry = new THREE.BoxBufferGeometry(
+      halfExtents.x * 2,
+      halfExtents.y * 2,
+      halfExtents.z * 2
+    );
+
+    for (let i = 0; i < 7; i++) {
+      const boxBody = new CANNON.Body({ mass: 5 });
+      boxBody.addShape(boxShape);
+      const boxMesh = new THREE.Mesh(boxGeometry, material);
+
+      const x = (Math.random() - 0.5) * 20;
+      const y = (Math.random() - 0.5) * 1 + 1;
+      const z = (Math.random() - 0.5) * 20;
+
+      boxBody.position.set(x, y, z);
+      boxMesh.position.copy(boxBody.position);
+
+      boxMesh.castShadow = true;
+      boxMesh.receiveShadow = true;
+
+      world.addBody(boxBody);
+      scene.add(boxMesh);
+      boxes.push(boxBody);
+      boxMeshes.push(boxMesh);
+    }
+
+    // The shooting balls
+    const shootVelocity = 15;
+    const ballShape = new CANNON.Sphere(0.2);
+    const ballGeometry = new THREE.SphereBufferGeometry(
+      ballShape.radius,
+      32,
+      32
+    );
+
+    // Returns a vector pointing the the diretion the camera is at
+    function getShootDirection() {
+      const vector = new THREE.Vector3(0, 0, 1);
+      vector.unproject(camera);
+      const ray = new THREE.Ray(
+        sphereBody.position,
+        vector.sub(sphereBody.position).normalize()
+      );
+      return ray.direction;
+    }
+
+    window.addEventListener("click", (event) => {
+      if (!controls.enabled) {
+        return;
+      }
+
+      const ballBody = new CANNON.Body({ mass: 1 });
+      ballBody.addShape(ballShape);
+      const ballMesh = new THREE.Mesh(ballGeometry, material);
+
+      ballMesh.castShadow = true;
+      ballMesh.receiveShadow = true;
+
+      world.addBody(ballBody);
+      scene.add(ballMesh);
+      balls.push(ballBody);
+      ballMeshes.push(ballMesh);
+
+      const shootDirection = getShootDirection();
+      ballBody.velocity.set(
+        shootDirection.x * shootVelocity,
+        shootDirection.y * shootVelocity,
+        shootDirection.z * shootVelocity
+      );
+
+      // Move the ball outside the player sphere
+      const x =
+        sphereBody.position.x +
+        shootDirection.x * (sphereShape.radius * 1.02 + ballShape.radius);
+      const y =
+        sphereBody.position.y +
+        shootDirection.y * (sphereShape.radius * 1.02 + ballShape.radius);
+      const z =
+        sphereBody.position.z +
+        shootDirection.z * (sphereShape.radius * 1.02 + ballShape.radius);
+      ballBody.position.set(x, y, z);
+      ballMesh.position.copy(ballBody.position);
+    });
   }
 
-  function resizeRendererToDisplaySize(renderer) {
-    const canvas = renderer.domElement;
-    const width = canvas.clientWidth;
-    const height = canvas.clientHeight;
-    const needResize = canvas.width !== width || canvas.height !== height;
-    if (needResize) {
-      renderer.setSize(width, height, false);
-    }
-    return needResize;
+  function initPointerLock() {
+    const targetIcon = document.querySelector(".target-icon");
+
+    controls = new PointerLockControlsCannon(camera, sphereBody);
+    scene.add(controls.getObject());
+
+    instructions.addEventListener("click", () => {
+      controls.lock();
+    });
+
+    controls.addEventListener("lock", () => {
+      controls.enabled = true;
+      instructions.style.display = "none";
+      targetIcon.style.visibility = "visible";
+    });
+
+    controls.addEventListener("unlock", () => {
+      controls.enabled = false;
+      instructions.style.display = null;
+      targetIcon.style.visibility = "hidden";
+    });
+
+    // document.addEventListener(
+    //   "pointerlockchange",
+    //   (event) => {
+    //     if (!document.pointerLockElement) {
+    //       targetIcon.style.visibility = "hidden";
+    //     } else {
+    //       targetIcon.style.visibility = "visible";
+    //     }
+    //   },
+    //   false
+    // );
   }
 
-  function render() {
-    const deltaTime = Math.min(0.05, clock.getDelta()) / STEPS_PER_FRAME;
+  function animate() {
+    requestAnimationFrame(animate);
 
-    if (resizeRendererToDisplaySize(renderer)) {
-      const canvas = renderer.domElement;
-      camera.aspect = canvas.clientWidth / canvas.clientHeight;
-      camera.updateProjectionMatrix();
+    const time = performance.now() / 1000;
+    const dt = time - lastCallTime;
+    lastCallTime = time;
+
+    if (controls.enabled) {
+      world.step(timeStep, dt);
+
+      // Update ball positions
+      for (let i = 0; i < balls.length; i++) {
+        ballMeshes[i].position.copy(balls[i].position);
+        ballMeshes[i].quaternion.copy(balls[i].quaternion);
+      }
+
+      // Update box positions
+      for (let i = 0; i < boxes.length; i++) {
+        boxMeshes[i].position.copy(boxes[i].position);
+        boxMeshes[i].quaternion.copy(boxes[i].quaternion);
+      }
     }
 
-    for (let i = 0; i < STEPS_PER_FRAME; i++) {
-      controls(deltaTime);
-      updatePlayer(deltaTime);
-    }
-
+    controls.update(dt);
     renderer.render(scene, camera);
-
-    requestAnimationFrame(render);
-
-    world.step(1/60, deltaTime)
-
-    // Update box positions
-    for (let i = 0; i < boxes.length; i++) {
-      boxMeshes[i].position.copy(boxes[i].position)
-      boxMeshes[i].quaternion.copy(boxes[i].quaternion)
-    }
-
-    // scene.simulate(undefined, 1);
   }
-
-  render();
 }
 
 main();

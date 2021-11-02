@@ -28,15 +28,43 @@
       z-index: 100000;
       transform: translate(-50%, -50%);
     }
+
+    #instructions {
+      position: fixed;
+      left: 0;
+      top: 0;
+
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      text-align: center;
+
+      cursor: pointer;
+    }
+
+    #instructions span {
+      font-size: 40px;
+    }
   </style>
-  <script src="./init.js" type="module"></script>
 </head>
 
 <body>
-  <canvas id="c"></canvas>
+  <!-- <canvas id="c"></canvas> -->
   <img class="target-icon" src="./assets/images/target.svg"></img>
 
-  <!-- <script src="libs/physi.js"></script> -->
+  <div id="instructions">
+    <span>끌릭해</span>
+    <br />
+    (W,A,S,D = Move, SPACE = Jump, MOUSE = Look, CLICK = Shoot)
+  </div>
+
   <script src="./main.js" type="module"></script>
 </body>
 

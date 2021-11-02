@@ -38,6 +38,6 @@
   "dependencies": {
     "cannon-es": "^0.18.0",
     "physijs-webpack": "^0.1.4",
-    "three": "^0.132.0"
+    "three": "^0.122.0"
   }
 }
