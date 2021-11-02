@@ -1,16 +1,8 @@
-import { init } from "./init.js"; init();
+import { init } from "./init.js";
+init();
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-var Physijs = require('physijs-webpack');
-
-console.log(Physijs.Scene);
-// const Physijs = require("physijs-webpack");
-// 
-// import PhysijsWorker from 'physijs-webpack/physijs_worker';
-// import * as PhysijsWorker from 'physijs-webpack/physijs_worker';
-
-// Physijs.scripts.worker = '../libs/physijs_worker.js';
-// Physijs.scripts.ammo = '../libs/ammo.js';
+import * as CANNON from "cannon-es";
 
 const keyStates = {};
 
@@ -38,16 +30,83 @@ function main() {
   camera.lookAt(0, 0, 0);
   camera.rotation.order = "YXZ";
 
-  // const scene = new THREE.Scene();
-  const scene = new Physijs.Scene;
+  const scene = new THREE.Scene();
+  // const scene = new Physijs.Scene;
   // console.log(scene);
   scene.background = new THREE.Color("white");
   // scene.setGravity(new THREE.Vector3(0, -50, 0));
 
   scene.add(camera);
 
-  var axes = new THREE.AxesHelper(1000);
+  const axes = new THREE.AxesHelper(1000);
   scene.add(axes);
+
+  let world = new CANNON.World();
+
+  let material = new THREE.MeshLambertMaterial({ color: 0xdddddd })
+
+  const boxes = []
+  const boxMeshes = []
+
+  // Tweak contact properties.
+  // Contact stiffness - use to make softer/harder contacts
+  world.defaultContactMaterial.contactEquationStiffness = 1e9;
+
+  // Stabilization time in number of timesteps
+  world.defaultContactMaterial.contactEquationRelaxation = 4;
+
+  const solver = new CANNON.GSSolver();
+  solver.iterations = 7;
+  solver.tolerance = 0.1;
+  world.solver = new CANNON.SplitSolver(solver);
+  // use this to test non-split solver
+  // world.solver = solver
+
+  world.gravity.set(0, -100, 0);
+
+  // Create a slippery material (friction coefficient = 0.0)
+  let physicsMaterial = new CANNON.Material("physics");
+  const physics_physics = new CANNON.ContactMaterial(
+    physicsMaterial,
+    physicsMaterial,
+    {
+      friction: 0.0,
+      restitution: 0.3,
+    }
+  );
+
+  // We must add the contact materials to the world
+  world.addContactMaterial(physics_physics);
+
+  // Add boxes both in cannon.js and three.js
+  const halfExtents = new CANNON.Vec3(1, 1, 1);
+  const boxShape = new CANNON.Box(halfExtents);
+  const boxGeometry = new THREE.BoxBufferGeometry(
+    halfExtents.x * 2,
+    halfExtents.y * 2,
+    halfExtents.z * 2
+  );
+
+  for (let i = 0; i < 7; i++) {
+    const boxBody = new CANNON.Body({ mass: 5 });
+    boxBody.addShape(boxShape);
+    const boxMesh = new THREE.Mesh(boxGeometry, material);
+
+    const x = (Math.random() - 0.5) * 20;
+    const y = (Math.random() - 0.5) * 1 + 100;
+    const z = (Math.random() - 0.5) * 20;
+
+    boxBody.position.set(x, y, z);
+    boxMesh.position.copy(boxBody.position);
+
+    boxMesh.castShadow = true;
+    boxMesh.receiveShadow = true;
+
+    world.addBody(boxBody);
+    scene.add(boxMesh);
+    boxes.push(boxBody);
+    boxMeshes.push(boxMesh);
+  }
 
   const playerVelocity = new THREE.Vector3();
   const playerDirection = new THREE.Vector3();
@@ -249,6 +308,9 @@ function main() {
     camera.position.z += deltaPosition.z * 50;
   }
 
+  function initCannon() {
+  }
+
   function resizeRendererToDisplaySize(renderer) {
     const canvas = renderer.domElement;
     const width = canvas.clientWidth;
@@ -277,6 +339,14 @@ function main() {
     renderer.render(scene, camera);
 
     requestAnimationFrame(render);
+
+    world.step(1/60, deltaTime)
+
+    // Update box positions
+    for (let i = 0; i < boxes.length; i++) {
+      boxMeshes[i].position.copy(boxes[i].position)
+      boxMeshes[i].quaternion.copy(boxes[i].quaternion)
+    }
 
     // scene.simulate(undefined, 1);
   }

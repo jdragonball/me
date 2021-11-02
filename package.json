@@ -36,6 +36,7 @@
     "worker-loader": "^2.0.0"
   },
   "dependencies": {
+    "cannon-es": "^0.18.0",
     "physijs-webpack": "^0.1.4",
     "three": "^0.132.0"
   }
