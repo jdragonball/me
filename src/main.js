@@ -48,6 +48,9 @@ function main() {
     scene = new THREE.Scene();
     scene.fog = new THREE.Fog(0xffffff, 0, 500);
 
+    const axes = new THREE.AxesHelper(1000);
+    scene.add(axes);
+
     // Renderer
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -162,7 +165,7 @@ function main() {
 
       const x = (Math.random() - 0.5) * 20;
       const y = (Math.random() - 0.5) * 1 + 1;
-      const z = (Math.random() - 0.5) * 20;
+      const z = (Math.random() - 0.5) * 20 -10;
 
       boxBody.position.set(x, y, z);
       boxMesh.position.copy(boxBody.position);
@@ -256,18 +259,6 @@ function main() {
       instructions.style.display = null;
       targetIcon.style.visibility = "hidden";
     });
-
-    // document.addEventListener(
-    //   "pointerlockchange",
-    //   (event) => {
-    //     if (!document.pointerLockElement) {
-    //       targetIcon.style.visibility = "hidden";
-    //     } else {
-    //       targetIcon.style.visibility = "visible";
-    //     }
-    //   },
-    //   false
-    // );
   }
 
   function animate() {
