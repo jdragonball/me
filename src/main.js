@@ -79,6 +79,40 @@ function main() {
     }
   });
 
+  // map
+  {
+    const loader = new GLTFLoader();
+    loader.load( './assets/models/Gallery/model/scene.gltf', ( gltf ) => {
+
+      // gltf.scene.scale.set(30, 30, 30);
+      gltf.scene.position.set(-75, -30, 0);
+
+      scene.add( gltf.scene );
+
+      // worldOctree.fromGraphNode( gltf.scene );
+
+      gltf.scene.traverse( child => {
+
+        if ( child.isMesh ) {
+
+          child.castShadow = true;
+          child.receiveShadow = true;
+
+          if ( child.material.map ) {
+
+            child.material.map.anisotropy = 8;
+
+          }
+
+        }
+
+      } );
+
+      // animate();
+
+    } );
+  }
+
   // 평면
   {
     const loader = new THREE.TextureLoader();
@@ -162,6 +196,11 @@ function main() {
     spotLight.position.set(-40, 60, -10);
     spotLight.castShadow = true;
     scene.add(spotLight);
+
+    const spotLight2 = new THREE.SpotLight(0xffff00);
+    spotLight2.position.set(-100, 0, 0);
+    spotLight2.castShadow = true;
+    scene.add(spotLight2);
   }
 
   function catchObjectClick(event) {
