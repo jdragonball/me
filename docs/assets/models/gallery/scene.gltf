@@ -1,0 +1,489 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 8713,
+      "max": [
+        59.77210998535156,
+        25.07716178894043,
+        59.77210235595703
+      ],
+      "min": [
+        -59.77208709716797,
+        -0.008011341094970703,
+        -59.77208709716797
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 104556,
+      "componentType": 5126,
+      "count": 8713,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 8713,
+      "max": [
+        0.8825801014900208,
+        0.98828125
+      ],
+      "min": [
+        0.01171875,
+        0.01171875
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 50760,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 209112,
+      "componentType": 5126,
+      "count": 721,
+      "max": [
+        14.78429126739502,
+        25.077028274536133,
+        14.784282684326172
+      ],
+      "min": [
+        -14.784263610839844,
+        21.346275329589844,
+        -14.784263610839844
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 217764,
+      "componentType": 5126,
+      "count": 721,
+      "max": [
+        1.0,
+        8.331656317750458e-06,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 69704,
+      "componentType": 5126,
+      "count": 721,
+      "max": [
+        0.7686022520065308,
+        0.14336833357810974
+      ],
+      "min": [
+        0.6369526386260986,
+        0.01171875
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 203040,
+      "componentType": 5125,
+      "count": 4104,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 226416,
+      "componentType": 5126,
+      "count": 288,
+      "max": [
+        14.784290313720703,
+        21.346275329589844,
+        14.784280776977539
+      ],
+      "min": [
+        -14.784261703491211,
+        2.2898998260498047,
+        -14.784261703491211
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 229872,
+      "componentType": 5126,
+      "count": 288,
+      "max": [
+        0.9916110634803772,
+        -0.12175942957401276,
+        0.9916111826896667
+      ],
+      "min": [
+        -0.991611123085022,
+        -0.12175992876291275,
+        -0.9916112422943115
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 75472,
+      "componentType": 5126,
+      "count": 288,
+      "max": [
+        0.9697494506835938,
+        0.9890835881233215
+      ],
+      "min": [
+        0.02851775288581848,
+        0.04576827585697174
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 219456,
+      "componentType": 5125,
+      "count": 432,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "BehNaM (https://sketchfab.com/GbehnamG)",
+      "license": "SKETCHFAB Standard (https://sketchfab.com/licenses)",
+      "source": "https://sketchfab.com/3d-models/sci-fi-portal-gallery-for-product-showcase-8ca2ea3e740f498c906f4317588e4386",
+      "title": "Sci-fi Portal & Gallery for Product Showcase"
+    },
+    "generator": "Sketchfab-11.53.2",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 221184,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 77776,
+      "byteOffset": 221184,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 233328,
+      "byteOffset": 298960,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 532288,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "images": [
+    {
+      "uri": "textures/lambert3_specularGlossiness.jpeg"
+    },
+    {
+      "uri": "textures/lambert3_occlusion.png"
+    },
+    {
+      "uri": "textures/lambert6_diffuse.png"
+    }
+  ],
+  "materials": [
+    {
+      "emissiveFactor": [
+        0.020199953404729264,
+        0.020199953404729264,
+        0.020199953404729264
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "glossinessFactor": 0.2700076381333141,
+          "specularFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularGlossinessTexture": {
+            "index": 0
+          }
+        }
+      },
+      "name": "lambert3",
+      "occlusionTexture": {
+        "index": 1
+      }
+    },
+    {
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "glossinessFactor": 0.0,
+          "specularFactor": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "name": "lambert5"
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "emissiveFactor": [
+        0.5051258945064976,
+        0.5051258945064976,
+        0.5051258945064976
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 2
+          },
+          "glossinessFactor": 0.0,
+          "specularFactor": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "name": "lambert6"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "polySurface1_lambert3_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "polySurface5_lambert5_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "polySurface6_lambert6_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.15461920201778412,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.433235962586248e-17,
+        -0.15461920201778412,
+        0.0,
+        0.0,
+        0.15461920201778412,
+        3.433235962586248e-17,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "f4ce1a91e22147c3823774b58f232a7f.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        6
+      ],
+      "name": "pCylinder3"
+    },
+    {
+      "children": [
+        5
+      ],
+      "name": "polySurface1"
+    },
+    {
+      "mesh": 0,
+      "name": "polySurface1_lambert3_0"
+    },
+    {
+      "children": [
+        7,
+        9
+      ],
+      "name": "polySurface2"
+    },
+    {
+      "children": [
+        8
+      ],
+      "name": "polySurface5"
+    },
+    {
+      "mesh": 1,
+      "name": "polySurface5_lambert5_0"
+    },
+    {
+      "children": [
+        10
+      ],
+      "name": "polySurface6"
+    },
+    {
+      "mesh": 2,
+      "name": "polySurface6_lambert6_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

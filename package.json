@@ -1,43 +1,50 @@
 {
-  "name": "me",
+  "name": "kdol-world",
   "version": "1.0.0",
-  "description": "me",
+  "description": "kdol world",
+  "homepage": "https://kdol.me",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --progress",
-    "start": "webpack serve --progress --open"
+    "start": "webpack-dev-server --config webpack/webpack.dev.js",
+    "build": "webpack --config webpack/webpack.prod.js",
+    "bundle": "npm run build",
+    "serve": "serve dist"
+  },
+  "keywords": [
+    "three",
+    "typeScript",
+    "webpack",
+    "starter",
+    "template"
+  ],
+  "author": {
+    "name": "Jaeyong Sin",
+    "url": "https://github.com/jdragonball"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdragonball/me.git"
+    "url": "https://github.com/yandeu/three-project-template.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jdragonball/me/issues"
+  "engines": {
+    "node": ">=8.0.0"
   },
-  "homepage": "https://github.com/jdragonball/me#readme",
+  "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.0",
-    "babel-loader": "^8.2.3",
-    "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^9.0.1",
-    "core-js": "^3.19.0",
-    "cross-env": "^7.0.3",
-    "html-webpack-plugin": "^5.5.0",
-    "source-map-loader": "^3.0.0",
-    "terser-webpack-plugin": "^5.2.4",
-    "webpack": "^5.61.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.4.0",
-    "worker-loader": "^2.0.0"
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "serve": "^11.3.1",
+    "ts-loader": "^5.4.5",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2",
+    "webpack-obfuscator": "^0.27.4",
+    "workbox-webpack-plugin": "^5.1.3"
   },
   "dependencies": {
-    "cannon-es": "^0.18.0",
-    "physijs-webpack": "^0.1.4",
-    "three": "^0.132.0"
+    "@enable3d/ammo-physics": "0.23.0",
+    "three": "0.130.0"
   }
 }

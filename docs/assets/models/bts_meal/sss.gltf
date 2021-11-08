@@ -1,0 +1,5951 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.0.5eb040c7)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 160,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                50.0,
+                50.000003814697269
+            ],
+            "min": [
+                -50.0,
+                -50.0,
+                -50.000003814697269
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 160,
+            "type": "VEC3",
+            "max": [
+                0.9998078346252441,
+                1.0,
+                0.999879002571106
+            ],
+            "min": [
+                -0.9998078346252441,
+                -1.0,
+                -0.999879002571106
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 468,
+            "type": "SCALAR",
+            "max": [
+                159
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 242,
+            "type": "VEC3",
+            "max": [
+                115.56493377685547,
+                208.4609375,
+                115.56497192382813
+            ],
+            "min": [
+                -115.56494903564453,
+                -100.0,
+                -115.56497192382813
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 242,
+            "type": "VEC3",
+            "max": [
+                0.9998825788497925,
+                1.0,
+                0.9998826384544373
+            ],
+            "min": [
+                -0.9998825788497925,
+                -1.0,
+                -0.9998826384544373
+            ]
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 840,
+            "type": "SCALAR",
+            "max": [
+                241
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 221,
+            "type": "VEC3",
+            "max": [
+                100.00005340576172,
+                248.8740234375,
+                100.00006103515625
+            ],
+            "min": [
+                -100.00008392333985,
+                -96.43115234375,
+                -100.00009155273438
+            ]
+        },
+        {
+            "bufferView": 7,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 221,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.943434284612522e-7,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 8,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 900,
+            "type": "SCALAR",
+            "max": [
+                220
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 9,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 132,
+            "type": "VEC3",
+            "max": [
+                60.768829345703128,
+                68.39677429199219,
+                60.76881790161133
+            ],
+            "min": [
+                -60.768829345703128,
+                -49.999996185302737,
+                -60.76881790161133
+            ]
+        },
+        {
+            "bufferView": 10,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 132,
+            "type": "VEC3",
+            "max": [
+                0.9963445663452148,
+                1.0,
+                0.9951908588409424
+            ],
+            "min": [
+                -0.9963445663452148,
+                -1.0,
+                -0.9951908588409424
+            ]
+        },
+        {
+            "bufferView": 11,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 348,
+            "type": "SCALAR",
+            "max": [
+                131
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 12,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                60.76883316040039,
+                68.39677429199219,
+                60.76881790161133
+            ],
+            "min": [
+                -60.768829345703128,
+                68.39677429199219,
+                -60.768821716308597
+            ]
+        },
+        {
+            "bufferView": 13,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.0,
+                1.0,
+                2.2345422223679635e-7
+            ],
+            "min": [
+                0.0,
+                1.0,
+                -2.4949520138761729e-7
+            ]
+        },
+        {
+            "bufferView": 14,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 102,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 15,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 88,
+            "type": "VEC3",
+            "max": [
+                188.21072387695313,
+                261.0314025878906,
+                -244.71624755859376
+            ],
+            "min": [
+                -196.65582275390626,
+                43.25196838378906,
+                -529.1189575195313
+            ]
+        },
+        {
+            "bufferView": 16,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 88,
+            "type": "VEC3",
+            "max": [
+                0.9750606417655945,
+                0.9972695112228394,
+                0.9505447745323181
+            ],
+            "min": [
+                -0.9919424653053284,
+                -0.9909850358963013,
+                -0.8212466239929199
+            ]
+        },
+        {
+            "bufferView": 17,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 204,
+            "type": "SCALAR",
+            "max": [
+                87
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 18,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 132,
+            "type": "VEC3",
+            "max": [
+                60.768829345703128,
+                68.39677429199219,
+                60.76881790161133
+            ],
+            "min": [
+                -60.768829345703128,
+                -49.999996185302737,
+                -60.76881790161133
+            ]
+        },
+        {
+            "bufferView": 19,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 132,
+            "type": "VEC3",
+            "max": [
+                0.9963445663452148,
+                1.0,
+                0.9951908588409424
+            ],
+            "min": [
+                -0.9963445663452148,
+                -1.0,
+                -0.9951908588409424
+            ]
+        },
+        {
+            "bufferView": 20,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 348,
+            "type": "SCALAR",
+            "max": [
+                131
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 21,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                60.76883316040039,
+                68.39677429199219,
+                60.76881790161133
+            ],
+            "min": [
+                -60.768829345703128,
+                68.39677429199219,
+                -60.768821716308597
+            ]
+        },
+        {
+            "bufferView": 22,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.0,
+                1.0,
+                2.2345422223679635e-7
+            ],
+            "min": [
+                0.0,
+                1.0,
+                -2.4949520138761729e-7
+            ]
+        },
+        {
+            "bufferView": 23,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 102,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 24,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 88,
+            "type": "VEC3",
+            "max": [
+                282.5740966796875,
+                64.59992218017578,
+                -48.36353302001953
+            ],
+            "min": [
+                -136.0400848388672,
+                6.472141265869141,
+                -399.6991882324219
+            ]
+        },
+        {
+            "bufferView": 25,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 88,
+            "type": "VEC3",
+            "max": [
+                0.8826791644096375,
+                1.0,
+                0.9093310832977295
+            ],
+            "min": [
+                -0.8971095681190491,
+                -1.0,
+                -0.9338902235031128
+            ]
+        },
+        {
+            "bufferView": 26,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 204,
+            "type": "SCALAR",
+            "max": [
+                87
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 27,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 241,
+            "type": "VEC3",
+            "max": [
+                103.51394653320313,
+                538.6708374023438,
+                67.97561645507813
+            ],
+            "min": [
+                -62.132659912109378,
+                -55.80105209350586,
+                -67.97564697265625
+            ]
+        },
+        {
+            "bufferView": 28,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 241,
+            "type": "VEC3",
+            "max": [
+                0.9963085055351257,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9992263913154602,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 29,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 456,
+            "type": "SCALAR",
+            "max": [
+                240
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 30,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 322,
+            "type": "VEC3",
+            "max": [
+                87.21267700195313,
+                208.89361572265626,
+                71.18921661376953
+            ],
+            "min": [
+                -72.82025146484375,
+                -15.910873413085938,
+                -58.519256591796878
+            ]
+        },
+        {
+            "bufferView": 31,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 1920,
+            "type": "SCALAR",
+            "max": [
+                321
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 32,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 322,
+            "type": "VEC3",
+            "max": [
+                76.077880859375,
+                349.4106750488281,
+                68.62566375732422
+            ],
+            "min": [
+                -69.10824584960938,
+                154.05967712402345,
+                -54.12335205078125
+            ]
+        },
+        {
+            "bufferView": 33,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 1920,
+            "type": "SCALAR",
+            "max": [
+                321
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 34,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 322,
+            "type": "VEC3",
+            "max": [
+                51.218536376953128,
+                411.5180358886719,
+                85.77182006835938
+            ],
+            "min": [
+                -72.71226501464844,
+                133.0831756591797,
+                -51.93797302246094
+            ]
+        },
+        {
+            "bufferView": 35,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 1920,
+            "type": "SCALAR",
+            "max": [
+                321
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 36,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 322,
+            "type": "VEC3",
+            "max": [
+                51.218536376953128,
+                411.5180358886719,
+                85.77182006835938
+            ],
+            "min": [
+                -72.71226501464844,
+                133.0831756591797,
+                -51.93797302246094
+            ]
+        },
+        {
+            "bufferView": 37,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 1920,
+            "type": "SCALAR",
+            "max": [
+                321
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 38,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 322,
+            "type": "VEC3",
+            "max": [
+                87.21267700195313,
+                208.89361572265626,
+                71.18921661376953
+            ],
+            "min": [
+                -72.82025146484375,
+                -15.910873413085938,
+                -58.519256591796878
+            ]
+        },
+        {
+            "bufferView": 39,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 1920,
+            "type": "SCALAR",
+            "max": [
+                321
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 40,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 322,
+            "type": "VEC3",
+            "max": [
+                76.077880859375,
+                349.4106750488281,
+                68.62566375732422
+            ],
+            "min": [
+                -69.10824584960938,
+                154.05967712402345,
+                -54.12335205078125
+            ]
+        },
+        {
+            "bufferView": 41,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 1920,
+            "type": "SCALAR",
+            "max": [
+                321
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 42,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 322,
+            "type": "VEC3",
+            "max": [
+                76.077880859375,
+                349.4106750488281,
+                68.62566375732422
+            ],
+            "min": [
+                -69.10824584960938,
+                154.05967712402345,
+                -54.12335205078125
+            ]
+        },
+        {
+            "bufferView": 43,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 1920,
+            "type": "SCALAR",
+            "max": [
+                321
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 44,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 322,
+            "type": "VEC3",
+            "max": [
+                76.077880859375,
+                349.4106750488281,
+                68.62566375732422
+            ],
+            "min": [
+                -69.10824584960938,
+                154.05967712402345,
+                -54.12335205078125
+            ]
+        },
+        {
+            "bufferView": 45,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 1920,
+            "type": "SCALAR",
+            "max": [
+                321
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 46,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                50.0
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 47,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8739866614341736,
+                0.9923986196517944,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 48,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 49,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                59.6309814453125
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 50,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8692611455917358,
+                0.9916269183158875,
+                0.9945136904716492
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 51,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 52,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                50.0
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 53,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8676650524139404,
+                0.9909234046936035,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 54,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 55,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                50.0
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 56,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8739866614341736,
+                0.9923986196517944,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 57,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 58,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                59.6309814453125
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 59,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8692611455917358,
+                0.9916269183158875,
+                0.9945136904716492
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 60,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 61,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                50.0
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 62,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8676650524139404,
+                0.9909234046936035,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 63,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 64,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                50.0
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 65,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8676650524139404,
+                0.9909234046936035,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 66,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 67,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                59.6309814453125
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 68,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8692611455917358,
+                0.9916269183158875,
+                0.9945136904716492
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 69,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 70,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                50.0
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 71,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8739866614341736,
+                0.9923986196517944,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 72,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 73,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                50.0
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 74,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8676650524139404,
+                0.9909234046936035,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 75,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 76,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                59.6309814453125
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 77,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8692611455917358,
+                0.9916269183158875,
+                0.9945136904716492
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 78,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 79,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                50.0,
+                49.999996185302737,
+                50.0
+            ],
+            "min": [
+                -50.0,
+                -49.999996185302737,
+                -50.0
+            ]
+        },
+        {
+            "bufferView": 80,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "max": [
+                0.8739866614341736,
+                0.9923986196517944,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 81,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 36,
+            "type": "SCALAR",
+            "max": [
+                23
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 149328,
+            "uri": "result.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 1920,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1920,
+            "byteLength": 1920,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 3840,
+            "byteLength": 1872,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 5712,
+            "byteLength": 2904,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 8616,
+            "byteLength": 2904,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 11520,
+            "byteLength": 3360,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 14880,
+            "byteLength": 2652,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 17532,
+            "byteLength": 2652,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 20184,
+            "byteLength": 3600,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 23784,
+            "byteLength": 1584,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 25368,
+            "byteLength": 1584,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 26952,
+            "byteLength": 1392,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 28344,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 28632,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 28920,
+            "byteLength": 408,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 29328,
+            "byteLength": 1056,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 30384,
+            "byteLength": 1056,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 31440,
+            "byteLength": 816,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 32256,
+            "byteLength": 1584,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 33840,
+            "byteLength": 1584,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 35424,
+            "byteLength": 1392,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 36816,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 37104,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 37392,
+            "byteLength": 408,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 37800,
+            "byteLength": 1056,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 38856,
+            "byteLength": 1056,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 39912,
+            "byteLength": 816,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 40728,
+            "byteLength": 2892,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 43620,
+            "byteLength": 2892,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 46512,
+            "byteLength": 1824,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 48336,
+            "byteLength": 3864,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 52200,
+            "byteLength": 7680,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 59880,
+            "byteLength": 3864,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 63744,
+            "byteLength": 7680,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 71424,
+            "byteLength": 3864,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 75288,
+            "byteLength": 7680,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 82968,
+            "byteLength": 3864,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 86832,
+            "byteLength": 7680,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 94512,
+            "byteLength": 3864,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 98376,
+            "byteLength": 7680,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 106056,
+            "byteLength": 3864,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 109920,
+            "byteLength": 7680,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 117600,
+            "byteLength": 3864,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 121464,
+            "byteLength": 7680,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 129144,
+            "byteLength": 3864,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 133008,
+            "byteLength": 7680,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 140688,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 140976,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 141264,
+            "byteLength": 144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 141408,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 141696,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 141984,
+            "byteLength": 144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 142128,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 142416,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 142704,
+            "byteLength": 144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 142848,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 143136,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 143424,
+            "byteLength": 144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 143568,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 143856,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 144144,
+            "byteLength": 144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 144288,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 144576,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 144864,
+            "byteLength": 144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 145008,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 145296,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 145584,
+            "byteLength": 144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 145728,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 146016,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 146304,
+            "byteLength": 144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 146448,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 146736,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 147024,
+            "byteLength": 144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 147168,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 147456,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 147744,
+            "byteLength": 144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 147888,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 148176,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 148464,
+            "byteLength": 144,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 148608,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 148896,
+            "byteLength": 288,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 149184,
+            "byteLength": 144,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "lambert2",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "lambert4",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "lambert5",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "lambert8",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "lambert9",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "lambert6",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "lambert10",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "lambert7",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "lambert3",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "lambert11",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        },
+        {
+            "name": "lambert12",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    0.4000000059604645,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Tray",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 2,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Soda1",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 1,
+                    "indices": 5,
+                    "attributes": {
+                        "POSITION": 3,
+                        "NORMAL": 4
+                    }
+                }
+            ]
+        },
+        {
+            "name": "SodaCap",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 2,
+                    "indices": 8,
+                    "attributes": {
+                        "POSITION": 6,
+                        "NORMAL": 7
+                    }
+                }
+            ]
+        },
+        {
+            "name": "SauceContainer2",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 3,
+                    "indices": 11,
+                    "attributes": {
+                        "POSITION": 9,
+                        "NORMAL": 10
+                    }
+                }
+            ]
+        },
+        {
+            "name": "SauceLabel",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 4,
+                    "indices": 14,
+                    "attributes": {
+                        "POSITION": 12,
+                        "NORMAL": 13
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NuggetBoxT3",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 5,
+                    "indices": 17,
+                    "attributes": {
+                        "POSITION": 15,
+                        "NORMAL": 16
+                    }
+                }
+            ]
+        },
+        {
+            "name": "SauceContainer3",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 3,
+                    "indices": 20,
+                    "attributes": {
+                        "POSITION": 18,
+                        "NORMAL": 19
+                    }
+                }
+            ]
+        },
+        {
+            "name": "SauceLabel",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 6,
+                    "indices": 23,
+                    "attributes": {
+                        "POSITION": 21,
+                        "NORMAL": 22
+                    }
+                }
+            ]
+        },
+        {
+            "name": "NuggetBoxT2",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 7,
+                    "indices": 26,
+                    "attributes": {
+                        "POSITION": 24,
+                        "NORMAL": 25
+                    }
+                }
+            ]
+        },
+        {
+            "name": "FriesContainer1",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 8,
+                    "indices": 29,
+                    "attributes": {
+                        "POSITION": 27,
+                        "NORMAL": 28
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nugget7",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 9,
+                    "indices": 31,
+                    "attributes": {
+                        "POSITION": 30
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nugget6",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 9,
+                    "indices": 33,
+                    "attributes": {
+                        "POSITION": 32
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nugget5",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 9,
+                    "indices": 35,
+                    "attributes": {
+                        "POSITION": 34
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nugget4",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 9,
+                    "indices": 37,
+                    "attributes": {
+                        "POSITION": 36
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nugget3",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 9,
+                    "indices": 39,
+                    "attributes": {
+                        "POSITION": 38
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nugget2",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 9,
+                    "indices": 41,
+                    "attributes": {
+                        "POSITION": 40
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nugget1",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 9,
+                    "indices": 43,
+                    "attributes": {
+                        "POSITION": 42
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nugget",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 9,
+                    "indices": 45,
+                    "attributes": {
+                        "POSITION": 44
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 48,
+                    "attributes": {
+                        "POSITION": 46,
+                        "NORMAL": 47
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries2",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 51,
+                    "attributes": {
+                        "POSITION": 49,
+                        "NORMAL": 50
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries3",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 54,
+                    "attributes": {
+                        "POSITION": 52,
+                        "NORMAL": 53
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries4",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 57,
+                    "attributes": {
+                        "POSITION": 55,
+                        "NORMAL": 56
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries5",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 60,
+                    "attributes": {
+                        "POSITION": 58,
+                        "NORMAL": 59
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries6",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 63,
+                    "attributes": {
+                        "POSITION": 61,
+                        "NORMAL": 62
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries7",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 66,
+                    "attributes": {
+                        "POSITION": 64,
+                        "NORMAL": 65
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries8",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 69,
+                    "attributes": {
+                        "POSITION": 67,
+                        "NORMAL": 68
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries9",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 72,
+                    "attributes": {
+                        "POSITION": 70,
+                        "NORMAL": 71
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries10",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 75,
+                    "attributes": {
+                        "POSITION": 73,
+                        "NORMAL": 74
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries11",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 78,
+                    "attributes": {
+                        "POSITION": 76,
+                        "NORMAL": 77
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fries12",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 10,
+                    "indices": 81,
+                    "attributes": {
+                        "POSITION": 79,
+                        "NORMAL": 80
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "children": [
+                1,
+                9,
+                17,
+                19,
+                24,
+                26,
+                31,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                58,
+                68,
+                77,
+                86,
+                95,
+                105,
+                115,
+                125,
+                135,
+                145,
+                155
+            ]
+        },
+        {
+            "name": "Tray_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                9.081941604614258,
+                0.0,
+                1.0
+            ],
+            "children": [
+                2
+            ]
+        },
+        {
+            "name": "Tray_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -9.081941604614258,
+                0.0,
+                1.0
+            ],
+            "children": [
+                3
+            ]
+        },
+        {
+            "name": "Tray_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                9.081941604614258,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                4
+            ]
+        },
+        {
+            "name": "Tray_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                18.80905532836914,
+                0.0,
+                1.0
+            ],
+            "children": [
+                5
+            ]
+        },
+        {
+            "name": "Tray_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -27.8909969329834,
+                0.0,
+                1.0
+            ],
+            "children": [
+                6
+            ]
+        },
+        {
+            "name": "Tray_$AssimpFbx$_Scaling",
+            "matrix": [
+                6.335744380950928,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.32562267780303957,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                9.162447929382325,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                7
+            ]
+        },
+        {
+            "name": "Tray_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                27.8909969329834,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                8
+            ]
+        },
+        {
+            "name": "Tray",
+            "mesh": 0
+        },
+        {
+            "name": "Soda1_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -143.12034606933595,
+                100.0,
+                209.6016845703125,
+                1.0
+            ],
+            "children": [
+                10
+            ]
+        },
+        {
+            "name": "Soda1_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -100.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                11
+            ]
+        },
+        {
+            "name": "Soda1_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.5447919964790344,
+                0.0,
+                0.8385711908340454,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.8385711908340454,
+                0.0,
+                0.5447919964790344,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                12
+            ]
+        },
+        {
+            "name": "Soda1_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                100.0,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                13
+            ]
+        },
+        {
+            "name": "Soda1_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -100.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                14
+            ]
+        },
+        {
+            "name": "Soda1_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                100.0,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                15
+            ]
+        },
+        {
+            "name": "Soda1",
+            "children": [
+                16
+            ],
+            "mesh": 1
+        },
+        {
+            "name": "SodaCap",
+            "matrix": [
+                1.213019609451294,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.09339042752981186,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.213019609451294,
+                0.0,
+                0.0,
+                202.8424835205078,
+                0.0,
+                1.0
+            ],
+            "mesh": 2
+        },
+        {
+            "name": "SauceContainer2",
+            "matrix": [
+                1.1856753826141358,
+                0.0,
+                -0.42168888449668887,
+                0.0,
+                0.0,
+                0.6127144694328308,
+                0.0,
+                0.0,
+                0.3342173397541046,
+                0.0,
+                0.9397289752960205,
+                0.0,
+                108.20120239257813,
+                30.635725021362306,
+                268.6440124511719,
+                1.0
+            ],
+            "children": [
+                18
+            ],
+            "mesh": 3
+        },
+        {
+            "name": "SauceLabel",
+            "matrix": [
+                1.1127551794052125,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.1127551794052125,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.1127551794052125,
+                0.0,
+                0.0,
+                -6.927923679351807,
+                0.0,
+                1.0
+            ],
+            "mesh": 4
+        },
+        {
+            "name": "NuggetBoxT3_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                28.58099365234375,
+                59.41267395019531,
+                -308.2271728515625,
+                1.0
+            ],
+            "children": [
+                20
+            ]
+        },
+        {
+            "name": "NuggetBoxT3_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -28.58099365234375,
+                -59.41267395019531,
+                308.2271728515625,
+                1.0
+            ],
+            "children": [
+                21
+            ]
+        },
+        {
+            "name": "NuggetBoxT3_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                28.58099365234375,
+                59.41267395019531,
+                -308.2271728515625,
+                1.0
+            ],
+            "children": [
+                22
+            ]
+        },
+        {
+            "name": "NuggetBoxT3_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -28.58099365234375,
+                -59.41267395019531,
+                308.2271728515625,
+                1.0
+            ],
+            "children": [
+                23
+            ]
+        },
+        {
+            "name": "NuggetBoxT3",
+            "mesh": 5
+        },
+        {
+            "name": "SauceContainer3",
+            "matrix": [
+                1.1856753826141358,
+                0.0,
+                -0.42168888449668887,
+                0.0,
+                0.0,
+                0.6127144694328308,
+                0.0,
+                0.0,
+                0.3342173397541046,
+                0.0,
+                0.9397289752960205,
+                0.0,
+                108.20120239257813,
+                30.635725021362306,
+                115.11665344238281,
+                1.0
+            ],
+            "children": [
+                25
+            ],
+            "mesh": 6
+        },
+        {
+            "name": "SauceLabel_node",
+            "matrix": [
+                1.1127551794052125,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.1127551794052125,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.1127551794052125,
+                0.0,
+                0.0,
+                -6.927923679351807,
+                0.0,
+                1.0
+            ],
+            "mesh": 7
+        },
+        {
+            "name": "NuggetBoxT2_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                20.129520416259767,
+                24.654001235961915,
+                -324.151123046875,
+                1.0
+            ],
+            "children": [
+                27
+            ]
+        },
+        {
+            "name": "NuggetBoxT2_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -20.129520416259767,
+                -24.654001235961915,
+                324.151123046875,
+                1.0
+            ],
+            "children": [
+                28
+            ]
+        },
+        {
+            "name": "NuggetBoxT2_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                20.129520416259767,
+                24.654001235961915,
+                -324.151123046875,
+                1.0
+            ],
+            "children": [
+                29
+            ]
+        },
+        {
+            "name": "NuggetBoxT2_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -20.129520416259767,
+                -24.654001235961915,
+                324.151123046875,
+                1.0
+            ],
+            "children": [
+                30
+            ]
+        },
+        {
+            "name": "NuggetBoxT2",
+            "mesh": 8
+        },
+        {
+            "name": "FriesContainer1_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -166.64877319335938,
+                32.10449981689453,
+                -23.783010482788087,
+                1.0
+            ],
+            "children": [
+                32
+            ]
+        },
+        {
+            "name": "FriesContainer1_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -32.10449981689453,
+                0.0,
+                1.0
+            ],
+            "children": [
+                33
+            ]
+        },
+        {
+            "name": "FriesContainer1_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.9552398920059204,
+                0.0,
+                -0.29583224654197695,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.29583224654197695,
+                0.0,
+                0.9552398920059204,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                34
+            ]
+        },
+        {
+            "name": "FriesContainer1_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                32.10449981689453,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                35
+            ]
+        },
+        {
+            "name": "FriesContainer1_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.842170943040401e-14,
+                17.89550018310547,
+                0.0,
+                1.0
+            ],
+            "children": [
+                36
+            ]
+        },
+        {
+            "name": "FriesContainer1_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -50.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                37
+            ]
+        },
+        {
+            "name": "FriesContainer1_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.5226259827613831,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.44587820768356326,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.9558930397033692,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                38
+            ]
+        },
+        {
+            "name": "FriesContainer1_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                50.0,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                39
+            ]
+        },
+        {
+            "name": "FriesContainer1",
+            "mesh": 9
+        },
+        {
+            "name": "Nugget7",
+            "matrix": [
+                -0.5642209649085999,
+                0.0,
+                0.589457631111145,
+                0.0,
+                0.0,
+                0.12272407114505768,
+                0.0,
+                0.0,
+                -0.5402833819389343,
+                0.0,
+                -0.5171520113945007,
+                0.0,
+                80.48444366455078,
+                14.832223892211914,
+                -236.6732940673828,
+                1.0
+            ],
+            "mesh": 10
+        },
+        {
+            "name": "Nugget6",
+            "matrix": [
+                0.6395882368087769,
+                0.0,
+                0.5649810433387756,
+                0.0,
+                0.0,
+                0.12835247814655305,
+                0.0,
+                0.0,
+                -0.5178487300872803,
+                0.0,
+                0.5862319469451904,
+                0.0,
+                150.03750610351563,
+                -5.417320728302002,
+                -280.32177734375,
+                1.0
+            ],
+            "mesh": 11
+        },
+        {
+            "name": "Nugget5",
+            "matrix": [
+                -0.16067899763584138,
+                -0.06662388890981674,
+                0.9993613362312317,
+                0.0,
+                -0.04790019616484642,
+                0.14483891427516938,
+                0.001954425126314163,
+                0.0,
+                -0.8703781366348267,
+                -0.2857005000114441,
+                -0.15898749232292176,
+                0.0,
+                18.01051902770996,
+                -1.4916772842407227,
+                -201.66189575195313,
+                1.0
+            ],
+            "mesh": 12
+        },
+        {
+            "name": "Nugget4",
+            "matrix": [
+                0.20245304703712464,
+                -0.15962441265583039,
+                0.7541128396987915,
+                0.0,
+                0.015903113409876825,
+                0.11702395230531693,
+                0.020501235499978067,
+                0.0,
+                -0.6998388767242432,
+                0.05996694415807724,
+                0.20057566463947297,
+                0.0,
+                141.785400390625,
+                8.40871524810791,
+                -215.51283264160157,
+                1.0
+            ],
+            "mesh": 13
+        },
+        {
+            "name": "Nugget3",
+            "matrix": [
+                0.35740646719932558,
+                -0.11312568187713623,
+                0.5400838255882263,
+                0.0,
+                0.018783072009682657,
+                0.12059757113456726,
+                0.012830398045480252,
+                0.0,
+                -0.6172033548355103,
+                0.05152703821659088,
+                0.419234037399292,
+                0.0,
+                34.63579177856445,
+                38.05598831176758,
+                -185.3506317138672,
+                1.0
+            ],
+            "mesh": 14
+        },
+        {
+            "name": "Nugget2",
+            "matrix": [
+                0.6437520384788513,
+                -0.3057476878166199,
+                0.21283185482025147,
+                0.0,
+                0.06108643487095833,
+                0.1094878688454628,
+                -0.027481108903884889,
+                0.0,
+                -0.12208610773086548,
+                0.2514786124229431,
+                0.7305399775505066,
+                0.0,
+                -45.23032760620117,
+                11.826866149902344,
+                -132.23501586914063,
+                1.0
+            ],
+            "mesh": 15
+        },
+        {
+            "name": "Nugget1",
+            "matrix": [
+                0.5257658958435059,
+                0.0,
+                -0.4579489827156067,
+                0.0,
+                0.0,
+                0.10486724227666855,
+                0.0,
+                0.0,
+                0.4197455644607544,
+                0.0,
+                0.4819049835205078,
+                0.0,
+                76.64405822753906,
+                -5.417320728302002,
+                -188.86862182617188,
+                1.0
+            ],
+            "mesh": 16
+        },
+        {
+            "name": "Nugget",
+            "matrix": [
+                0.23582962155342103,
+                0.1081085056066513,
+                -0.6471815705299377,
+                0.0,
+                -0.017007583752274514,
+                0.10289359837770462,
+                0.010990394279360772,
+                0.0,
+                0.5924125909805298,
+                0.07355128228664398,
+                0.22815847396850587,
+                0.0,
+                204.80078125,
+                32.63008499145508,
+                -256.8864440917969,
+                1.0
+            ],
+            "mesh": 17
+        },
+        {
+            "name": "Fries_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -203.50596618652345,
+                158.2707061767578,
+                -91.78649139404297,
+                1.0
+            ],
+            "children": [
+                49
+            ]
+        },
+        {
+            "name": "Fries_$AssimpFbx$_RotationOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.42094606161117556,
+                0.006396208889782429,
+                -1.3592314720153809,
+                1.0
+            ],
+            "children": [
+                50
+            ]
+        },
+        {
+            "name": "Fries_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.842170943040401e-14,
+                -158.277099609375,
+                5.684341886080802e-14,
+                1.0
+            ],
+            "children": [
+                51
+            ]
+        },
+        {
+            "name": "Fries_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.9552398920059204,
+                0.0,
+                -0.29583224654197695,
+                0.0,
+                0.002659551566466689,
+                0.9999595880508423,
+                0.00858766958117485,
+                0.0,
+                0.29582029581069949,
+                -0.00899006612598896,
+                0.955201268196106,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                52
+            ]
+        },
+        {
+            "name": "Fries_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.842170943040401e-14,
+                158.277099609375,
+                -5.684341886080802e-14,
+                1.0
+            ],
+            "children": [
+                53
+            ]
+        },
+        {
+            "name": "Fries_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.8481045782425068e-14,
+                -108.277099609375,
+                -1.1867213494185507e-16,
+                1.0
+            ],
+            "children": [
+                54
+            ]
+        },
+        {
+            "name": "Fries_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                55
+            ]
+        },
+        {
+            "name": "Fries_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                3.1655421257019045,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                56
+            ]
+        },
+        {
+            "name": "Fries_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                57
+            ]
+        },
+        {
+            "name": "Fries",
+            "mesh": 18
+        },
+        {
+            "name": "Fries2_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -180.62315368652345,
+                157.72898864746095,
+                -62.38531494140625,
+                1.0
+            ],
+            "children": [
+                59
+            ]
+        },
+        {
+            "name": "Fries2_$AssimpFbx$_RotationOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -12.57167911529541,
+                0.5481080412864685,
+                3.8933756351470949,
+                1.0
+            ],
+            "children": [
+                60
+            ]
+        },
+        {
+            "name": "Fries2_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -5.684341886080802e-14,
+                -158.277099609375,
+                -1.4210854715202005e-14,
+                1.0
+            ],
+            "children": [
+                61
+            ]
+        },
+        {
+            "name": "Fries2_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.951931893825531,
+                -0.08315008878707886,
+                -0.2948077917098999,
+                0.0,
+                0.0794282779097557,
+                0.9965369701385498,
+                -0.02459847740828991,
+                0.0,
+                0.29583224654197695,
+                -1.862645149230957e-9,
+                0.9552398920059204,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                62
+            ]
+        },
+        {
+            "name": "Fries2_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                5.684341886080802e-14,
+                158.277099609375,
+                1.4210854715202005e-14,
+                1.0
+            ],
+            "children": [
+                63
+            ]
+        },
+        {
+            "name": "Fries2_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.7353660176222644e-14,
+                -108.277099609375,
+                5.589404061660287e-14,
+                1.0
+            ],
+            "children": [
+                64
+            ]
+        },
+        {
+            "name": "Fries2_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                65
+            ]
+        },
+        {
+            "name": "Fries2_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                3.1655421257019045,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                66
+            ]
+        },
+        {
+            "name": "Fries2_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                67
+            ]
+        },
+        {
+            "name": "Fries2",
+            "mesh": 19
+        },
+        {
+            "name": "Fries3_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -181.10986328125,
+                158.277099609375,
+                -19.469663619995118,
+                1.0
+            ],
+            "children": [
+                69
+            ]
+        },
+        {
+            "name": "Fries3_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -158.277099609375,
+                0.0,
+                1.0
+            ],
+            "children": [
+                70
+            ]
+        },
+        {
+            "name": "Fries3_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.9552398920059204,
+                0.0,
+                -0.29583224654197695,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.29583224654197695,
+                0.0,
+                0.9552398920059204,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                71
+            ]
+        },
+        {
+            "name": "Fries3_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                158.277099609375,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                72
+            ]
+        },
+        {
+            "name": "Fries3_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -108.277099609375,
+                0.0,
+                1.0
+            ],
+            "children": [
+                73
+            ]
+        },
+        {
+            "name": "Fries3_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                74
+            ]
+        },
+        {
+            "name": "Fries3_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                3.1655421257019045,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                75
+            ]
+        },
+        {
+            "name": "Fries3_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                76
+            ]
+        },
+        {
+            "name": "Fries3",
+            "mesh": 20
+        },
+        {
+            "name": "Fries4_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -160.69032287597657,
+                158.277099609375,
+                -2.486156702041626,
+                1.0
+            ],
+            "children": [
+                78
+            ]
+        },
+        {
+            "name": "Fries4_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -158.277099609375,
+                0.0,
+                1.0
+            ],
+            "children": [
+                79
+            ]
+        },
+        {
+            "name": "Fries4_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.9552398920059204,
+                0.0,
+                -0.29583224654197695,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.29583224654197695,
+                0.0,
+                0.9552398920059204,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                80
+            ]
+        },
+        {
+            "name": "Fries4_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                158.277099609375,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                81
+            ]
+        },
+        {
+            "name": "Fries4_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.842170943040401e-14,
+                -108.277099609375,
+                0.0,
+                1.0
+            ],
+            "children": [
+                82
+            ]
+        },
+        {
+            "name": "Fries4_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                83
+            ]
+        },
+        {
+            "name": "Fries4_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                3.1655421257019045,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                84
+            ]
+        },
+        {
+            "name": "Fries4_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                85
+            ]
+        },
+        {
+            "name": "Fries4",
+            "mesh": 21
+        },
+        {
+            "name": "Fries5_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -167.9276123046875,
+                158.277099609375,
+                23.09571647644043,
+                1.0
+            ],
+            "children": [
+                87
+            ]
+        },
+        {
+            "name": "Fries5_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -158.277099609375,
+                0.0,
+                1.0
+            ],
+            "children": [
+                88
+            ]
+        },
+        {
+            "name": "Fries5_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.9552398920059204,
+                0.0,
+                -0.29583224654197695,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.29583224654197695,
+                0.0,
+                0.9552398920059204,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                89
+            ]
+        },
+        {
+            "name": "Fries5_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                158.277099609375,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                90
+            ]
+        },
+        {
+            "name": "Fries5_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -108.277099609375,
+                3.552713678800501e-15,
+                1.0
+            ],
+            "children": [
+                91
+            ]
+        },
+        {
+            "name": "Fries5_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                92
+            ]
+        },
+        {
+            "name": "Fries5_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                3.1655421257019045,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                93
+            ]
+        },
+        {
+            "name": "Fries5_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                94
+            ]
+        },
+        {
+            "name": "Fries5",
+            "mesh": 22
+        },
+        {
+            "name": "Fries6_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -157.6921844482422,
+                158.23048400878907,
+                56.145843505859378,
+                1.0
+            ],
+            "children": [
+                96
+            ]
+        },
+        {
+            "name": "Fries6_$AssimpFbx$_RotationOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.1363962888717652,
+                0.04662131518125534,
+                -3.669414520263672,
+                1.0
+            ],
+            "children": [
+                97
+            ]
+        },
+        {
+            "name": "Fries6_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.842170943040401e-14,
+                -158.277099609375,
+                -4.263256414560601e-14,
+                1.0
+            ],
+            "children": [
+                98
+            ]
+        },
+        {
+            "name": "Fries6_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.9552398920059204,
+                0.0,
+                -0.29583224654197695,
+                0.0,
+                0.007179790176451206,
+                0.99970543384552,
+                0.023183483630418779,
+                0.0,
+                0.2957451045513153,
+                -0.02426980249583721,
+                0.9549584984779358,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                99
+            ]
+        },
+        {
+            "name": "Fries6_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.842170943040401e-14,
+                158.277099609375,
+                4.263256414560601e-14,
+                1.0
+            ],
+            "children": [
+                100
+            ]
+        },
+        {
+            "name": "Fries6_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.1867213494185507e-16,
+                -108.277099609375,
+                2.1790971194905578e-14,
+                1.0
+            ],
+            "children": [
+                101
+            ]
+        },
+        {
+            "name": "Fries6_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                102
+            ]
+        },
+        {
+            "name": "Fries6_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                3.1655421257019045,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                103
+            ]
+        },
+        {
+            "name": "Fries6_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                104
+            ]
+        },
+        {
+            "name": "Fries6",
+            "mesh": 23
+        },
+        {
+            "name": "Fries7_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -134.09974670410157,
+                143.10377502441407,
+                58.89424514770508,
+                1.0
+            ],
+            "children": [
+                106
+            ]
+        },
+        {
+            "name": "Fries7_$AssimpFbx$_RotationOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                3.735278367996216,
+                0.8569368124008179,
+                -15.23298454284668,
+                1.0
+            ],
+            "children": [
+                107
+            ]
+        },
+        {
+            "name": "Fries7_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                8.526512829121202e-14,
+                -143.96072387695313,
+                -6.750155989720952e-14,
+                1.0
+            ],
+            "children": [
+                108
+            ]
+        },
+        {
+            "name": "Fries7_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.983686089515686,
+                0.04423721879720688,
+                -0.17436973750591279,
+                0.0,
+                -0.025946514680981637,
+                0.9940474033355713,
+                0.10581348091363907,
+                0.0,
+                0.1780126690864563,
+                -0.09956296533346176,
+                0.9789783358573914,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                109
+            ]
+        },
+        {
+            "name": "Fries7_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -8.526512829121202e-14,
+                143.96072387695313,
+                6.750155989720952e-14,
+                1.0
+            ],
+            "children": [
+                110
+            ]
+        },
+        {
+            "name": "Fries7_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.1322244936718502e-15,
+                -93.9607162475586,
+                -7.815970093361102e-14,
+                1.0
+            ],
+            "children": [
+                111
+            ]
+        },
+        {
+            "name": "Fries7_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                112
+            ]
+        },
+        {
+            "name": "Fries7_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.8792145252227785,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                113
+            ]
+        },
+        {
+            "name": "Fries7_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                114
+            ]
+        },
+        {
+            "name": "Fries7",
+            "mesh": 24
+        },
+        {
+            "name": "Fries8_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -144.22740173339845,
+                143.38796997070313,
+                26.19210433959961,
+                1.0
+            ],
+            "children": [
+                116
+            ]
+        },
+        {
+            "name": "Fries8_$AssimpFbx$_RotationOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                4.763905048370361,
+                0.5727536082267761,
+                -11.9115571975708,
+                1.0
+            ],
+            "children": [
+                117
+            ]
+        },
+        {
+            "name": "Fries8_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.842170943040401e-14,
+                -143.96072387695313,
+                7.105427357601002e-15,
+                1.0
+            ],
+            "children": [
+                118
+            ]
+        },
+        {
+            "name": "Fries8_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.9833576083183289,
+                0.047244347631931308,
+                -0.1754303276538849,
+                0.0,
+                -0.033091701567173007,
+                0.9960214495658875,
+                0.08274171501398087,
+                0.0,
+                0.1786414533853531,
+                -0.07555941492319107,
+                0.9810086488723755,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                119
+            ]
+        },
+        {
+            "name": "Fries8_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.842170943040401e-14,
+                143.96072387695313,
+                -7.105427357601002e-15,
+                1.0
+            ],
+            "children": [
+                120
+            ]
+        },
+        {
+            "name": "Fries8_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.4142921317579494e-13,
+                -93.9607162475586,
+                -6.304306984219674e-14,
+                1.0
+            ],
+            "children": [
+                121
+            ]
+        },
+        {
+            "name": "Fries8_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                122
+            ]
+        },
+        {
+            "name": "Fries8_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.8792145252227785,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                123
+            ]
+        },
+        {
+            "name": "Fries8_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                124
+            ]
+        },
+        {
+            "name": "Fries8",
+            "mesh": 25
+        },
+        {
+            "name": "Fries9_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -136.9901123046875,
+                143.38796997070313,
+                0.6102312803268433,
+                1.0
+            ],
+            "children": [
+                126
+            ]
+        },
+        {
+            "name": "Fries9_$AssimpFbx$_RotationOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                4.763905048370361,
+                0.5727536082267761,
+                -11.9115571975708,
+                1.0
+            ],
+            "children": [
+                127
+            ]
+        },
+        {
+            "name": "Fries9_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.842170943040401e-14,
+                -143.96072387695313,
+                4.263256414560601e-14,
+                1.0
+            ],
+            "children": [
+                128
+            ]
+        },
+        {
+            "name": "Fries9_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.9833576083183289,
+                0.047244347631931308,
+                -0.1754303276538849,
+                0.0,
+                -0.033091701567173007,
+                0.9960214495658875,
+                0.08274171501398087,
+                0.0,
+                0.1786414533853531,
+                -0.07555941492319107,
+                0.9810086488723755,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                129
+            ]
+        },
+        {
+            "name": "Fries9_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.842170943040401e-14,
+                143.96072387695313,
+                -4.263256414560601e-14,
+                1.0
+            ],
+            "children": [
+                130
+            ]
+        },
+        {
+            "name": "Fries9_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -8.458579431498692e-14,
+                -93.9607162475586,
+                -7.014849719979774e-14,
+                1.0
+            ],
+            "children": [
+                131
+            ]
+        },
+        {
+            "name": "Fries9_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                132
+            ]
+        },
+        {
+            "name": "Fries9_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.8792145252227785,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                133
+            ]
+        },
+        {
+            "name": "Fries9_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                134
+            ]
+        },
+        {
+            "name": "Fries9",
+            "mesh": 26
+        },
+        {
+            "name": "Fries10_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -186.38893127441407,
+                142.7819061279297,
+                -121.72508239746094,
+                1.0
+            ],
+            "children": [
+                136
+            ]
+        },
+        {
+            "name": "Fries10_$AssimpFbx$_RotationOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                9.651421546936036,
+                1.178808331489563,
+                15.648151397705079,
+                1.0
+            ],
+            "children": [
+                137
+            ]
+        },
+        {
+            "name": "Fries10_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.4210854715202004e-13,
+                -143.96072387695313,
+                -1.9895196601282806e-13,
+                1.0
+            ],
+            "children": [
+                138
+            ]
+        },
+        {
+            "name": "Fries10_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.9833576083183289,
+                0.047244347631931308,
+                -0.1754303276538849,
+                0.0,
+                -0.06704205274581909,
+                0.9918116331100464,
+                -0.10869736969470978,
+                0.0,
+                0.16885848343372346,
+                0.11864960193634033,
+                0.9784728288650513,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                139
+            ]
+        },
+        {
+            "name": "Fries10_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.4210854715202004e-13,
+                143.96072387695313,
+                1.9895196601282806e-13,
+                1.0
+            ],
+            "children": [
+                140
+            ]
+        },
+        {
+            "name": "Fries10_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.4052343002331908e-13,
+                -93.9607162475586,
+                -1.4029699439959548e-13,
+                1.0
+            ],
+            "children": [
+                141
+            ]
+        },
+        {
+            "name": "Fries10_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                142
+            ]
+        },
+        {
+            "name": "Fries10_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.8792145252227785,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                143
+            ]
+        },
+        {
+            "name": "Fries10_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                144
+            ]
+        },
+        {
+            "name": "Fries10",
+            "mesh": 27
+        },
+        {
+            "name": "Fries11_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -158.078857421875,
+                143.56280517578126,
+                -58.93095016479492,
+                1.0
+            ],
+            "children": [
+                146
+            ]
+        },
+        {
+            "name": "Fries11_$AssimpFbx$_RotationOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -6.651865005493164,
+                0.397906094789505,
+                -8.37615966796875,
+                1.0
+            ],
+            "children": [
+                147
+            ]
+        },
+        {
+            "name": "Fries11_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                5.684341886080802e-14,
+                -143.96072387695313,
+                1.1368683772161604e-13,
+                1.0
+            ],
+            "children": [
+                148
+            ]
+        },
+        {
+            "name": "Fries11_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.9838311672210693,
+                -0.03534098342061043,
+                -0.17557698488235475,
+                0.0,
+                0.04620610922574997,
+                0.9972360134124756,
+                0.05818365141749382,
+                0.0,
+                0.1730354279279709,
+                -0.06535561382770539,
+                0.9827448725700378,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                149
+            ]
+        },
+        {
+            "name": "Fries11_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -5.684341886080802e-14,
+                143.96072387695313,
+                -1.1368683772161604e-13,
+                1.0
+            ],
+            "children": [
+                150
+            ]
+        },
+        {
+            "name": "Fries11_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                4.528898292324756e-16,
+                -93.9607162475586,
+                8.345356876252388e-14,
+                1.0
+            ],
+            "children": [
+                151
+            ]
+        },
+        {
+            "name": "Fries11_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                152
+            ]
+        },
+        {
+            "name": "Fries11_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.8792145252227785,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                153
+            ]
+        },
+        {
+            "name": "Fries11_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                154
+            ]
+        },
+        {
+            "name": "Fries11",
+            "mesh": 28
+        },
+        {
+            "name": "Fries12_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -171.29989624023438,
+                143.88706970214845,
+                -99.9932632446289,
+                1.0
+            ],
+            "children": [
+                156
+            ]
+        },
+        {
+            "name": "Fries12_$AssimpFbx$_RotationOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -4.162900924682617,
+                0.07365461438894272,
+                -1.9676315784454346,
+                1.0
+            ],
+            "children": [
+                157
+            ]
+        },
+        {
+            "name": "Fries12_$AssimpFbx$_RotationPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                1.1368683772161604e-13,
+                -143.96072387695313,
+                5.684341886080802e-14,
+                1.0
+            ],
+            "children": [
+                158
+            ]
+        },
+        {
+            "name": "Fries12_$AssimpFbx$_Rotation",
+            "matrix": [
+                0.9787033796310425,
+                -0.02553020417690277,
+                -0.20368583500385285,
+                0.0,
+                0.028916921466588975,
+                0.9994884133338928,
+                0.013667835853993893,
+                0.0,
+                0.20323267579078675,
+                -0.019266724586486818,
+                0.9789408445358276,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                159
+            ]
+        },
+        {
+            "name": "Fries12_$AssimpFbx$_RotationPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -1.1368683772161604e-13,
+                143.96072387695313,
+                -5.684341886080802e-14,
+                1.0
+            ],
+            "children": [
+                160
+            ]
+        },
+        {
+            "name": "Fries12_$AssimpFbx$_ScalingOffset",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                4.528898292324756e-16,
+                -93.9607162475586,
+                2.264449146162378e-16,
+                1.0
+            ],
+            "children": [
+                161
+            ]
+        },
+        {
+            "name": "Fries12_$AssimpFbx$_ScalingPivot",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -49.999996185302737,
+                0.0,
+                1.0
+            ],
+            "children": [
+                162
+            ]
+        },
+        {
+            "name": "Fries12_$AssimpFbx$_Scaling",
+            "matrix": [
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                2.8792145252227785,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.23511745035648347,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                163
+            ]
+        },
+        {
+            "name": "Fries12_$AssimpFbx$_ScalingPivotInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.0,
+                49.999996185302737,
+                -0.0,
+                1.0
+            ],
+            "children": [
+                164
+            ]
+        },
+        {
+            "name": "Fries12",
+            "mesh": 29
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
