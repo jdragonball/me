@@ -442,7 +442,7 @@ const ItemPage = () => {
   var webGLRenderer = new THREE.WebGLRenderer( { canvas: itemOrbit });
   webGLRenderer.setClearColor('white');
   webGLRenderer.setSize(378, 378);
-  webGLRenderer.shadowMapEnabled = true;
+  webGLRenderer.shadowMap.enabled = true;
 
   // const axes = new THREE.AxesHelper(1000);
   // scene.add(axes);
